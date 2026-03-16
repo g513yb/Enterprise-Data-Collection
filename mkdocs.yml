@@ -1,0 +1,9 @@
+site_name: Project Documentation
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - SRS:
+      - Introduction: srs/introduction.md

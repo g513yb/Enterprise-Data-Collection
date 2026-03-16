@@ -1,0 +1,34 @@
+name: Deploy SRS Docs
+
+# 当 main 分支有 push 或 pull request 时触发
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 获取仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. 安装 Python 和 MkDocs
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install MkDocs and theme
+        run: |
+          pip install mkdocs mkdocs-material
+
+      # 3. 构建并部署网站到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdocs gh-deploy --force --verbose
