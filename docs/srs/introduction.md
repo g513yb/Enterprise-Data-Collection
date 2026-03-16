@@ -1,16 +1,11 @@
-# 1 Introduction
+# 1 引言
 
-## 1.1 Purpose
+## 1.1 编写目的
 
-This document specifies the requirements for the Task Management System.
+## 1.2 系统范围
 
-## 1.2 Scope
+## 1.3 术语、缩略语和定义
 
-The system allows users to create, edit, and manage tasks.
+## 1.4 参考资料
 
-## 1.3 Definitions
-
-| Term | Definition |
-|------|------------|
-| User | A person who interacts with the system |
-| Task | A unit of work managed by the system |
+## 1.5 文档概述

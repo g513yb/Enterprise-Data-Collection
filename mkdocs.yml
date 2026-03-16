@@ -4,6 +4,10 @@ theme:
   name: material
 
 nav:
-  - Home: index.md
+  - 首页: index.md
   - SRS:
-      - Introduction: srs/introduction.md
+      - 引言: srs/introduction.md
+      - 总体描述: srs/overall-description.md
+      - 功能需求: srs/functional-requirements.md
+      - 非功能需求: srs/non-functional-requirements.md
+      - 外部接口: srs/interfaces.md
