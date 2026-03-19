@@ -34,8 +34,7 @@ jobs:
           mkdocs build --strict
 
   deploy:
-    # ⭐ 关键：只在 push main 时执行
-    if: github.event_name == 'push'
+    if: github.ref == 'refs/heads/main'
 
     runs-on: ubuntu-latest
 
