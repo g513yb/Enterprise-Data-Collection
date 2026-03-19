@@ -1,5 +1,4 @@
-# Welcome to the Project Documentation
+# 2026软件项目管理大作业
 
-This is the home page of the SRS documentation.
-目前仅作为测试。
+该需求规格说明书由第二组全部11人参与编写
 
