@@ -1,0 +1,1941 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>总体描述 - 需求规格说明书</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="需求规格说明书" class="md-header__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            需求规格说明书
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              总体描述
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="需求规格说明书" class="md-nav__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    需求规格说明书
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        引言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          总体描述
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        总体描述
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 产品背景
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 产品背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1 行业背景与需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2 系统建设目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3 产品核心特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214" class="md-nav__link">
+    2.1.4 系统价值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 产品功能概述
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 产品功能概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    2.2.1 核心功能模块
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.1 核心功能模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    （1）企业备案与信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    （2）就业失业数据填报与审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    （3）数据查询与分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    （4）系统管理与通知发布
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    2.2.2 功能模块详细架构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    2.2.3 典型使用场景
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.3 典型使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    （1）企业用户使用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    （2）市级用户使用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    （3）省级用户使用场景
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    2.2.4 功能模块详细对照表
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 用户类别和特征
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 用户类别和特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    2.3.1 用户类型概述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    2.3.2 企业用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 企业用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321" class="md-nav__link">
+    2.3.2.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2322" class="md-nav__link">
+    2.3.2.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2323" class="md-nav__link">
+    2.3.2.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2324" class="md-nav__link">
+    2.3.2.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2325" class="md-nav__link">
+    2.3.2.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    2.3.3 市用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 市用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2331" class="md-nav__link">
+    2.3.3.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2332" class="md-nav__link">
+    2.3.3.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2333" class="md-nav__link">
+    2.3.3.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2334" class="md-nav__link">
+    2.3.3.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2335" class="md-nav__link">
+    2.3.3.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    2.3.4 省用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 省用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2341" class="md-nav__link">
+    2.3.4.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2342" class="md-nav__link">
+    2.3.4.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2343" class="md-nav__link">
+    2.3.4.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2344" class="md-nav__link">
+    2.3.4.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2345" class="md-nav__link">
+    2.3.4.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    2.3.5 用户类型综合对比
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236" class="md-nav__link">
+    2.3.6 用户类型与功能需求关联
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7 用户类型总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    2.4 运行环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    2.5 设计与实现约束
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    2.6 假设与依赖
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-requirements/" class="md-nav__link">
+        功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../non-functional-requirements/" class="md-nav__link">
+        非功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        外部接口
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 产品背景
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 产品背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1 行业背景与需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2 系统建设目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3 产品核心特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214" class="md-nav__link">
+    2.1.4 系统价值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 产品功能概述
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 产品功能概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    2.2.1 核心功能模块
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.1 核心功能模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    （1）企业备案与信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    （2）就业失业数据填报与审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    （3）数据查询与分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    （4）系统管理与通知发布
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    2.2.2 功能模块详细架构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    2.2.3 典型使用场景
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.3 典型使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    （1）企业用户使用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    （2）市级用户使用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    （3）省级用户使用场景
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    2.2.4 功能模块详细对照表
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 用户类别和特征
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 用户类别和特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    2.3.1 用户类型概述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    2.3.2 企业用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 企业用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321" class="md-nav__link">
+    2.3.2.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2322" class="md-nav__link">
+    2.3.2.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2323" class="md-nav__link">
+    2.3.2.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2324" class="md-nav__link">
+    2.3.2.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2325" class="md-nav__link">
+    2.3.2.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    2.3.3 市用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 市用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2331" class="md-nav__link">
+    2.3.3.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2332" class="md-nav__link">
+    2.3.3.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2333" class="md-nav__link">
+    2.3.3.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2334" class="md-nav__link">
+    2.3.3.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2335" class="md-nav__link">
+    2.3.3.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    2.3.4 省用户
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 省用户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2341" class="md-nav__link">
+    2.3.4.1 角色描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2342" class="md-nav__link">
+    2.3.4.2 权限范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2343" class="md-nav__link">
+    2.3.4.3 功能需求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2344" class="md-nav__link">
+    2.3.4.4 操作流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2345" class="md-nav__link">
+    2.3.4.5 用户界面需求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    2.3.5 用户类型综合对比
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236" class="md-nav__link">
+    2.3.6 用户类型与功能需求关联
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7 用户类型总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    2.4 运行环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    2.5 设计与实现约束
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    2.6 假设与依赖
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="2">2 总体描述</h1>
+<h2 id="21">2.1 产品背景</h2>
+<h3 id="211">2.1.1 行业背景与需求</h3>
+<p>在经济学的殿堂里，<strong>失业率一直被视为衡量一个国家经济健康状况的晴雨表</strong>。就业与失业问题是影响社会稳定和经济可持续发展的重要因素。准确、及时地掌握企业就业失业数据对于政府制定就业政策、优化产业结构、促进经济发展具有至关重要的意义。</p>
+<p><strong>云南省企业规模现状</strong>：</p>
+<ul>
+<li>规上工业企业：<strong>5515户</strong></li>
+<li>中小企业累计：<strong>145.35万户</strong></li>
+</ul>
+<p>云南省拥有众多不同类型的企业，就业失业数据的采集和分析工作尤为复杂和重要。传统的数据采集方式存在效率低、数据质量参差不齐、汇总周期长等问题，亟需建立一套现代化的数据采集系统。</p>
+<h3 id="212">2.1.2 系统建设目标</h3>
+<p>云南省企业就业失业数据采集系统应运而生，旨在为企业和政府部门搭建一个<strong>高效、便捷、准确</strong>的数据采集与分析平台。</p>
+<table>
+<thead>
+<tr>
+<th>目标维度</th>
+<th>具体目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据采集</strong></td>
+<td>提高数据采集效率和质量，实现企业数据便捷填报</td>
+</tr>
+<tr>
+<td><strong>数据管理</strong></td>
+<td>实现数据规范化存储、审核、汇总和上报</td>
+</tr>
+<tr>
+<td><strong>决策支持</strong></td>
+<td>为政府部门实时掌握全省企业就业失业动态，为宏观决策提供有力支持</td>
+</tr>
+<tr>
+<td><strong>系统对接</strong></td>
+<td>与国家失业监测系统进行数据交换，实现数据逐级汇总上报至部级单位</td>
+</tr>
+</tbody>
+</table>
+<h3 id="213">2.1.3 产品核心特性</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>详细说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>用户角色多样性与权限管理</strong></td>
+<td>系统支持企业用户、省用户、市用户三种角色，不同角色具有不同的权限和功能。通过严格的权限管理，确保数据的安全性和准确性</td>
+</tr>
+<tr>
+<td><strong>数据采集与上报流程规范化</strong></td>
+<td>严格遵循云南省就业失业数据采集的业务流程，从企业备案到数据填报，再到市局审核、省局汇总上报，每一步都有明确的操作规范和时间节点</td>
+</tr>
+<tr>
+<td><strong>数据查询与分析功能强大</strong></td>
+<td>企业用户可查询以往调查期数据（只读不可导出）；省用户可通过多种条件查询全省企业数据，进行多维分析、图表分析等</td>
+</tr>
+<tr>
+<td><strong>数据修改与审核机制完善</strong></td>
+<td>省用户可修改有明显错误的数据，修改后数据单独存储，不覆盖原始数据，保留修改日志；支持数据退回修改并添加退回理由</td>
+</tr>
+<tr>
+<td><strong>通知发布与浏览功能便捷</strong></td>
+<td>省用户可发布、修改、删除通知信息，包括标题、发布时间、通知内容等；企业用户和省用户均可浏览通知</td>
+</tr>
+<tr>
+<td><strong>系统监控与管理功能全面</strong></td>
+<td>省用户可实时查看系统工作情况（CPU、内存、硬盘等硬件信息及运行状态），进行用户管理、角色管理等操作</td>
+</tr>
+</tbody>
+</table>
+<h3 id="214">2.1.4 系统价值</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                      系统核心价值                                │
+├─────────────────────────────────────────────────────────────────┤
+│  ✓ 提高数据采集效率和质量                                        │
+│  ✓ 实现数据标准化和规范化                                        │
+│  ✓ 加强数据审核和质量控制                                        │
+│  ✓ 提供多维度数据分析能力                                        │
+│  ✓ 支持政府宏观决策                                              │
+│  ✓ 推动全省经济社会发展                                          │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="22">2.2 产品功能概述</h2>
+<h3 id="221">2.2.1 核心功能模块</h3>
+<h4 id="1">（1）企业备案与信息管理</h4>
+<p>企业备案是系统的基础功能之一，企业用户在首次使用系统时，需补充完善企业基本信息并提交备案申请。</p>
+<p><strong>备案信息内容</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>信息类别</th>
+<th>具体字段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础信息</td>
+<td>所属地区、组织机构代码、企业名称、企业性质、所属行业</td>
+</tr>
+<tr>
+<td>经营信息</td>
+<td>主要经营业务</td>
+</tr>
+<tr>
+<td>联系信息</td>
+<td>联系人、联系地址、邮政编码、联系电话、传真、EMAIL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备案流程</strong>：</p>
+<pre><code>企业填写备案信息 → 提交备案申请 → 省管理部门审核 → 审核通过 → 可进行数据填报
+</code></pre>
+<h4 id="2_1">（2）就业失业数据填报与审核</h4>
+<p>数据填报是系统的核心功能，企业用户需在规定的时间内填报当期的就业失业数据。</p>
+<p><strong>填报内容</strong>：</p>
+<ul>
+<li>建档期就业人数</li>
+<li>调查期就业人数</li>
+<li>就业人数减少类型及原因（当调查期数据小于建档期数据时为必填项）</li>
+</ul>
+<p><strong>审核流程</strong>：</p>
+<pre><code>企业填报数据 → 市局审核 → 省局审核 → 汇总上报至部级单位
+                ↓           ↓
+            可退回修改   可退回修改
+</code></pre>
+<h4 id="3">（3）数据查询与分析</h4>
+<p>数据查询与分析功能为省用户提供了强大的数据处理能力。</p>
+<p><strong>查询条件</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>查询维度</th>
+<th>具体条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单位信息</td>
+<td>单位名称、用户类型、单位性质、所属行业</td>
+</tr>
+<tr>
+<td>地区信息</td>
+<td>所属地市、所属市县、所处区域</td>
+</tr>
+<tr>
+<td>时间信息</td>
+<td>起始日期、结束日期、统计月份、统计季度</td>
+</tr>
+<tr>
+<td>状态信息</td>
+<td>数据状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分析功能</strong>：</p>
+<ul>
+<li><strong>多维分析</strong>：支持按地区、企业性质、行业等条件进行分析</li>
+<li><strong>图表分析</strong>：</li>
+<li>对比分析：使用折线图、表格形式对比两个调查期的企业岗位变动情况</li>
+<li>趋势分析：使用折线图、表格形式展示多个连续调查期内的企业岗位变动情况</li>
+<li><strong>取样分析</strong>：显示全省各市企业的数量和占比，生成饼图</li>
+</ul>
+<h4 id="4">（4）系统管理与通知发布</h4>
+<table>
+<thead>
+<tr>
+<th>管理功能</th>
+<th>详细说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>用户管理</strong></td>
+<td>创建、修改、删除省和企业用户账号，为用户分配角色和权限</td>
+</tr>
+<tr>
+<td><strong>角色管理</strong></td>
+<td>支持自定义角色，根据业务需求分配不同的功能权限</td>
+</tr>
+<tr>
+<td><strong>系统监控</strong></td>
+<td>实时显示系统运行状态，包括CPU、内存、硬盘等硬件信息和应用系统的使用情况</td>
+</tr>
+<tr>
+<td><strong>通知发布</strong></td>
+<td>发布、修改、删除通知信息，包括标题、发布时间和通知内容等</td>
+</tr>
+<tr>
+<td><strong>调查期管理</strong></td>
+<td>新增、修改调查期时间设置</td>
+</tr>
+</tbody>
+</table>
+<h3 id="222">2.2.2 功能模块详细架构</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────────┐
+│                        云南省企业就业失业数据采集系统                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐              │
+│  │   企业版系统     │  │   省级系统       │  │   市级系统       │              │
+│  ├─────────────────┤  ├─────────────────┤  ├─────────────────┤              │
+│  │ • 企业信息备案   │  │ • 企业备案管理   │  │ • 企业数据审核   │              │
+│  │ • 数据填报       │  │ • 报表管理       │  │ • 数据上报       │              │
+│  │ • 数据查询       │  │ • 数据汇总与分析 │  │                 │              │
+│  │                 │  │ • 数据修改与删除 │  │                 │              │
+│  │                 │  │ • 取样分析       │  │                 │              │
+│  │                 │  │ • 数据查询与导出 │  │                 │              │
+│  │                 │  │ • 通知发布       │  │                 │              │
+│  │                 │  │ • 系统管理       │  │                 │              │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘              │
+└─────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="223">2.2.3 典型使用场景</h3>
+<h4 id="1_1">（1）企业用户使用场景</h4>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>操作流程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>首次使用</strong></td>
+<td>收到省管理部门创建的账号 → 登录系统 → 补充企业基础信息 → 提交备案申请 → 等待省管理部门审核</td>
+</tr>
+<tr>
+<td><strong>数据填报与上报</strong></td>
+<td>每月按规定时间登录 → 填报当期就业失业数据 → 确认无误后保存并上报 → 查询上报数据状态 → 等待市局审核</td>
+</tr>
+<tr>
+<td><strong>数据查询</strong></td>
+<td>登录系统 → 选择数据查询功能 → 输入查询条件（如调查期）→ 查询历史数据（只读不可导出）</td>
+</tr>
+<tr>
+<td><strong>数据修改</strong></td>
+<td>收到市局或省局退回的数据 → 根据退回理由修改数据 → 重新上报</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2_2">（2）市级用户使用场景</h4>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>操作流程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据审核</strong></td>
+<td>登录系统 → 查看辖区内企业上报的数据 → 审核数据准确性和完整性 → 发现问题时退回修改并添加备注 → 审核通过后上报至省局</td>
+</tr>
+<tr>
+<td><strong>通知管理</strong></td>
+<td>发布针对辖区内企业的通知 → 查看系统发布的通知信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3_1">（3）省级用户使用场景</h4>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>操作流程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据汇总与分析</strong></td>
+<td>登录系统 → 查看市局上报的数据 → 进行数据汇总和多维分析 → 生成报表 → 以图表形式展示分析结果</td>
+</tr>
+<tr>
+<td><strong>报表管理</strong></td>
+<td>审核市局上报的数据 → 发现问题时退回修改 → 审核通过后上报至部委</td>
+</tr>
+<tr>
+<td><strong>用户管理</strong></td>
+<td>创建和管理省、市、企业用户账号 → 分配角色和权限</td>
+</tr>
+<tr>
+<td><strong>通知管理</strong></td>
+<td>发布和管理通知信息 → 向企业用户传达相关政策和要求</td>
+</tr>
+<tr>
+<td><strong>系统监控</strong></td>
+<td>监控系统运行状态 → 查看CPU、内存、硬盘等信息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="224">2.2.4 功能模块详细对照表</h3>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>模块名称</th>
+<th>主要功能</th>
+<th>适用用户</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>企业版</strong></td>
+<td>企业信息备案模块</td>
+<td>修改企业基本信息、提交备案申请、等待省管理部门审核</td>
+<td>企业用户</td>
+</tr>
+<tr>
+<td><strong>企业版</strong></td>
+<td>数据填报模块</td>
+<td>填报当期就业失业数据、提交数据、接收退回修改</td>
+<td>企业用户</td>
+</tr>
+<tr>
+<td><strong>企业版</strong></td>
+<td>数据查询模块</td>
+<td>查询以往调查期数据状态（只读不可导出）</td>
+<td>企业用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>企业备案管理模块</td>
+<td>查看全省已备案企业详细信息、导出企业列表</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>报表管理模块</td>
+<td>审核企业数据、退回修改、审核通过、上报部级单位</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>数据汇总与分析模块</td>
+<td>数据汇总、多维分析、图表分析（对比分析、趋势分析）</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>数据修改与删除模块</td>
+<td>修改有明显错误的数据（单独存储）、删除历史数据</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>取样分析模块</td>
+<td>显示各市企业数量和占比、生成饼图</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>数据查询与导出模块</td>
+<td>多条件查询全省数据、导出Excel文件</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>通知发布模块</td>
+<td>发布、修改、删除通知信息</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>省级系统</strong></td>
+<td>系统管理模块</td>
+<td>设置上报时限、用户管理、角色管理、系统监控</td>
+<td>省用户</td>
+</tr>
+<tr>
+<td><strong>市级系统</strong></td>
+<td>企业数据审核模块</td>
+<td>查看企业数据、退回修改、审核通过、上报省局</td>
+<td>市用户</td>
+</tr>
+<tr>
+<td><strong>市级系统</strong></td>
+<td>数据上报模块</td>
+<td>将审核通过的数据上报至省局、查看上报状态</td>
+<td>市用户</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="23">2.3 用户类别和特征</h2>
+<h3 id="231">2.3.1 用户类型概述</h3>
+<p>云南省企业就业失业数据采集系统主要服务于以下三类用户，每种用户类型在系统中承担不同的职责和功能，具有不同的权限和操作范围。</p>
+<pre><code>┌──────────────────────────────────────────────────────────────────┐
+│                         用户类型架构                              │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│    ┌─────────────┐                                               │
+│    │   省用户     │ ← 系统管理者、数据最终汇总者                    │
+│    └──────┬──────┘                                               │
+│           │ 审核/汇总                                             │
+│    ┌──────▼──────┐                                               │
+│    │   市用户     │ ← 中间审核者                                   │
+│    └──────┬──────┘                                               │
+│           │ 审核/上报                                             │
+│    ┌──────▼──────┐                                               │
+│    │  企业用户    │ ← 数据提供者、采集源头                          │
+│    └─────────────┘                                               │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="232">2.3.2 企业用户</h3>
+<h4 id="2321">2.3.2.1 角色描述</h4>
+<p>企业用户是系统的<strong>数据提供者</strong>，负责录入、修改和上报本企业的就业失业数据。企业用户是数据采集的源头，其数据的准确性和完整性直接影响系统的整体质量。</p>
+<h4 id="2322">2.3.2.2 权限范围</h4>
+<table>
+<thead>
+<tr>
+<th>权限类别</th>
+<th>具体权限</th>
+<th>限制说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据录入与修改</strong></td>
+<td>录入和修改本企业的基本信息</td>
+<td>仅限本企业数据</td>
+</tr>
+<tr>
+<td><strong>数据上报</strong></td>
+<td>将数据上报至市局进行审核</td>
+<td>需在规定时限内完成</td>
+</tr>
+<tr>
+<td><strong>数据查询</strong></td>
+<td>查询本企业以往调查期的数据状态</td>
+<td>只能浏览，不能导出</td>
+</tr>
+<tr>
+<td><strong>通知查看</strong></td>
+<td>查看系统发布的通知信息</td>
+<td>只读权限</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2323">2.3.2.3 功能需求</h4>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>企业信息管理</strong></td>
+<td>录入和修改企业基本信息，保存后上报省备案</td>
+</tr>
+<tr>
+<td><strong>数据填报</strong></td>
+<td>根据系统提供的模板填报当期就业失业数据，包括建档期就业人数、调查期就业人数等</td>
+</tr>
+<tr>
+<td><strong>数据查询</strong></td>
+<td>查询本企业以往调查期的数据状态</td>
+</tr>
+<tr>
+<td><strong>通知浏览</strong></td>
+<td>查看系统发布的通知信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2324">2.3.2.4 操作流程</h4>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                      企业用户操作流程                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【首次使用】                                                   │
+│  收到省管理部门创建账号 → 登录系统 → 补充企业基础信息           │
+│  → 按统一规范模板填写 → 上报省管理部门审核 → 等待审核结果        │
+│                                                                 │
+│  【数据填报与上报】                                             │
+│  每月按规定时间登录 → 填报当期就业失业数据 → 按模板填写数据     │
+│  → 确认无误后保存并上报 → 查询上报数据状态 → 等待市局审核        │
+│                                                                 │
+│  【数据查询】                                                   │
+│  登录系统 → 选择数据查询功能 → 输入查询条件（如调查期）         │
+│  → 查询历史数据（只读）                                         │
+│                                                                 │
+│  【数据修改】                                                   │
+│  收到退回通知 → 查看退回理由 → 修改数据 → 重新上报              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4 id="2325">2.3.2.5 用户界面需求</h4>
+<ul>
+<li>界面简洁明了，易于操作</li>
+<li>提供清晰的数据填报指引和模板</li>
+<li>提供数据查询和状态显示功能</li>
+<li>支持主流浏览器访问</li>
+</ul>
+<hr />
+<h3 id="233">2.3.3 市用户</h3>
+<h4 id="2331">2.3.3.1 角色描述</h4>
+<p>市用户是系统的<strong>中间审核者</strong>，负责审核辖区内企业上报的数据，并将审核通过的数据上报至省局。市用户在数据质量控制中起到关键作用。</p>
+<h4 id="2332">2.3.3.2 权限范围</h4>
+<table>
+<thead>
+<tr>
+<th>权限类别</th>
+<th>具体权限</th>
+<th>限制说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据审核</strong></td>
+<td>审核辖区内企业上报的数据</td>
+<td>可退回修改或审核通过</td>
+</tr>
+<tr>
+<td><strong>数据汇总与上报</strong></td>
+<td>将审核通过的数据汇总后上报至省局</td>
+<td>仅限辖区内数据</td>
+</tr>
+<tr>
+<td><strong>通知查看与发布</strong></td>
+<td>查看系统发布的通知信息，发布辖区内通知</td>
+<td>通知范围限于辖区</td>
+</tr>
+<tr>
+<td><strong>报表管理</strong></td>
+<td>查看企业上报的数据和报表</td>
+<td>只读查看权限</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2333">2.3.3.3 功能需求</h4>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>企业数据审核</strong></td>
+<td>查看企业上报的数据，审核数据的准确性和完整性</td>
+</tr>
+<tr>
+<td><strong>数据汇总与上报</strong></td>
+<td>将审核通过的数据汇总后上报至省局</td>
+</tr>
+<tr>
+<td><strong>通知管理</strong></td>
+<td>发布和查看通知信息</td>
+</tr>
+<tr>
+<td><strong>报表管理</strong></td>
+<td>查看企业上报的数据和报表</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2334">2.3.3.4 操作流程</h4>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                      市用户操作流程                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【数据审核】                                                   │
+│  登录系统 → 查看辖区内企业上报的数据 → 审核数据准确性和完整性   │
+│  → 发现问题时退回修改并添加备注 → 审核通过后上报至省局           │
+│                                                                 │
+│  【通知管理】                                                   │
+│  发布针对辖区内企业的通知 → 查看系统发布的通知信息              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4 id="2335">2.3.3.5 用户界面需求</h4>
+<ul>
+<li>界面需提供清晰的数据审核流程指引</li>
+<li>提供数据汇总和上报功能</li>
+<li>提供通知发布和管理功能</li>
+<li>支持批量审核操作</li>
+</ul>
+<hr />
+<h3 id="234">2.3.4 省用户</h3>
+<h4 id="2341">2.3.4.1 角色描述</h4>
+<p>省用户是系统的<strong>管理者和数据的最终汇总者</strong>，负责对全省企业就业失业数据进行汇总、分析和上报至部委。省用户还负责系统的用户管理、角色分配和系统监控，是系统的核心管理者。</p>
+<h4 id="2342">2.3.4.2 权限范围</h4>
+<table>
+<thead>
+<tr>
+<th>权限类别</th>
+<th>具体权限</th>
+<th>限制说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据汇总与分析</strong></td>
+<td>汇总全省数据，进行多维分析和图表展示</td>
+<td>全省范围数据</td>
+</tr>
+<tr>
+<td><strong>报表管理</strong></td>
+<td>审核市局上报的数据，退回修改或审核通过</td>
+<td>可上报至部委</td>
+</tr>
+<tr>
+<td><strong>用户管理</strong></td>
+<td>创建和管理省、市、企业用户账号，分配角色和权限</td>
+<td>全系统用户</td>
+</tr>
+<tr>
+<td><strong>通知管理</strong></td>
+<td>发布和管理通知信息</td>
+<td>全省范围通知</td>
+</tr>
+<tr>
+<td><strong>系统监控</strong></td>
+<td>监控系统运行状态，包括CPU、内存、硬盘等信息</td>
+<td>实时查看</td>
+</tr>
+<tr>
+<td><strong>数据接口管理</strong></td>
+<td>与国家失业监测系统进行数据交换</td>
+<td>遵循国家标准</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2343">2.3.4.3 功能需求</h4>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数据汇总与分析</strong></td>
+<td>汇总全省数据，进行多维分析和图表展示</td>
+</tr>
+<tr>
+<td><strong>报表管理</strong></td>
+<td>审核市局上报的数据，退回修改或审核通过</td>
+</tr>
+<tr>
+<td><strong>用户管理</strong></td>
+<td>创建和管理用户账号，分配角色和权限</td>
+</tr>
+<tr>
+<td><strong>通知管理</strong></td>
+<td>发布和管理通知信息</td>
+</tr>
+<tr>
+<td><strong>系统监控</strong></td>
+<td>监控系统运行状态</td>
+</tr>
+<tr>
+<td><strong>数据接口管理</strong></td>
+<td>与国家失业监测系统进行数据交换</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2344">2.3.4.4 操作流程</h4>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                      省用户操作流程                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  【数据汇总与分析】                                             │
+│  登录系统 → 查看市局上报的数据 → 进行数据汇总和多维分析         │
+│  → 生成报表 → 以图表形式展示分析结果                            │
+│                                                                 │
+│  【报表管理】                                                   │
+│  审核市局上报的数据 → 发现问题时退回修改 → 审核通过后上报至部委  │
+│                                                                 │
+│  【用户管理】                                                   │
+│  创建和管理省、市、企业用户账号 → 分配角色和权限                │
+│                                                                 │
+│  【通知管理】                                                   │
+│  发布和管理通知信息 → 向企业用户传达相关政策和要求              │
+│                                                                 │
+│  【系统监控】                                                   │
+│  监控系统运行状态 → 查看CPU、内存、硬盘等信息                   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4 id="2345">2.3.4.5 用户界面需求</h4>
+<ul>
+<li>界面需提供数据汇总和分析功能</li>
+<li>提供用户管理和角色分配功能</li>
+<li>提供通知发布和管理功能</li>
+<li>提供系统监控功能</li>
+<li>支持数据导出功能</li>
+</ul>
+<hr />
+<h3 id="235">2.3.5 用户类型综合对比</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>企业用户</th>
+<th>市用户</th>
+<th>省用户</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主要职责</strong></td>
+<td>数据录入与上报</td>
+<td>数据审核与上报</td>
+<td>数据汇总与管理</td>
+</tr>
+<tr>
+<td><strong>数据范围</strong></td>
+<td>本企业数据</td>
+<td>辖区内企业数据</td>
+<td>全省企业数据</td>
+</tr>
+<tr>
+<td><strong>数据录入</strong></td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td><strong>数据查询</strong></td>
+<td>本企业（只读）</td>
+<td>辖区内（可导出）</td>
+<td>全省（可导出）</td>
+</tr>
+<tr>
+<td><strong>数据审核</strong></td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>数据上报</strong></td>
+<td>上报至市局</td>
+<td>上报至省局</td>
+<td>上报至部委</td>
+</tr>
+<tr>
+<td><strong>用户管理</strong></td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>角色管理</strong></td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>系统监控</strong></td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td><strong>通知发布</strong></td>
+<td>✗</td>
+<td>辖区内</td>
+<td>全省</td>
+</tr>
+<tr>
+<td><strong>数据修改</strong></td>
+<td>本企业数据</td>
+<td>✗</td>
+<td>全省数据（留痕）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="236">2.3.6 用户类型与功能需求关联</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                    用户类型与功能需求关联图                          │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  企业用户 ────────────────→ 数据录入、查询、上报功能                 │
+│       │                                                             │
+│       ▼                                                             │
+│  市用户   ────────────────→ 数据审核、汇总、上报功能                 │
+│       │                                                             │
+│       ▼                                                             │
+│  省用户   ────────────────→ 数据汇总、分析、用户管理、系统监控功能    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>关联说明</strong>：</p>
+<ul>
+<li>企业用户主要关注<strong>数据录入和查询功能</strong></li>
+<li>市用户关注<strong>数据审核和汇总功能</strong></li>
+<li>省用户则关注<strong>数据汇总、分析、用户管理和系统监控功能</strong></li>
+</ul>
+<p>通过明确用户类型及其需求，系统设计能够更好地满足不同用户群体的业务需求，提升系统的整体性能和用户体验。</p>
+<h3 id="237">2.3.7 用户类型总结</h3>
+<p>用户类型分析是系统设计的重要环节，通过对用户角色、权限、功能需求和操作流程的详细描述，可以为系统的功能设计、界面设计和权限管理提供明确的指导。云南省企业就业失业数据采集系统通过合理划分用户类型，能够有效满足各级用户的业务需求，确保系统的高效运行和数据的准确性。</p>
+<h2 id="24">2.4 运行环境</h2>
+<p>本系统采用 B/S 架构，用户通过浏览器访问，服务器集中部署与运维。</p>
+<ul>
+<li>客户端：支持主流现代浏览器（Chrome、Edge、Firefox、Safari 及基于 Chromium 的国产浏览器），无需安装专用客户端；建议分辨率不低于 1366×768；具备稳定网络连接。</li>
+<li>服务器端：建议部署于政务云或私有云环境；采用 64 位 Linux 系统；应用服务与数据库分离部署并支持备份与容灾；具备负载均衡与扩展能力。</li>
+<li>网络与安全：支持政务外网与互联网访问场景；全链路使用 HTTPS；具备防火墙/WAF 等基础安全防护能力。</li>
+</ul>
+<h2 id="25">2.5 设计与实现约束</h2>
+<p>为保障合规性、可维护性与可扩展性，系统在设计与实现上需满足以下约束：</p>
+<ul>
+<li>合规约束：遵循国家与云南省政务数据管理、安全与保密相关法律法规及标准要求，满足等保要求。</li>
+<li>数据标准约束：企业唯一标识、地区与行业等基础编码遵循国家/省级发布的数据字典与编码标准；时间日期与统计口径保持一致。</li>
+<li>审计与留痕约束：对企业上报数据的修正需保留原始记录并记录修改人、时间与变更内容，确保可追溯。</li>
+<li>时效性约束：数据填报、审核与汇总需受调查期/上报期控制，到期自动锁定相关入口。</li>
+<li>技术约束：接口采用标准化的 REST/JSON 风格，前后端分离实现，支持后续与外部系统对接与扩展。</li>
+</ul>
+<h2 id="26">2.6 假设与依赖</h2>
+<p>系统顺利实施依赖以下前提条件：</p>
+<ul>
+<li>外部系统依赖：如需与国家失业监测系统进行数据交换，依赖其接口规范、联调窗口与稳定可用的服务能力。</li>
+<li>基础数据依赖：企业名录、地区编码、行业分类与指标口径等由业务主管部门提供并持续维护。</li>
+<li>网络与设施依赖：企业端具备稳定互联网访问条件，市/省级用户具备稳定的政务网访问条件。</li>
+<li>人员与组织假设：相关单位安排专人填报与审核，具备基础计算机操作能力并接受必要培训。</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 引言" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              引言
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../functional-requirements/" class="md-footer__link md-footer__link--next" aria-label="Next: 功能需求" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              功能需求
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

@@ -1,0 +1,1891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>功能需求 - 需求规格说明书</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="需求规格说明书" class="md-header__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            需求规格说明书
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              功能需求
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="需求规格说明书" class="md-nav__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    需求规格说明书
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        引言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overall-description/" class="md-nav__link">
+        总体描述
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          功能需求
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        功能需求
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 企业
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 企业">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-101" class="md-nav__link">
+    FR-101 企业信息修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-102" class="md-nav__link">
+    FR-102 备案上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-103" class="md-nav__link">
+    FR-103 数据填报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-104" class="md-nav__link">
+    FR-104 数据查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-105" class="md-nav__link">
+    FR-105 密码修改
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 省
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 省">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-201" class="md-nav__link">
+    FR-201 企业备案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-202" class="md-nav__link">
+    FR-202 企业查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-203" class="md-nav__link">
+    FR-203 报表管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-204" class="md-nav__link">
+    FR-204 数据修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-205" class="md-nav__link">
+    FR-205 数据删除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-206" class="md-nav__link">
+    FR-206 数据退回
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-207" class="md-nav__link">
+    FR-207 数据汇总
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-208" class="md-nav__link">
+    FR-208 数据导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-209" class="md-nav__link">
+    FR-209 数据查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-210" class="md-nav__link">
+    FR-210 多维分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-211" class="md-nav__link">
+    FR-211 图表分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-212" class="md-nav__link">
+    FR-212 发布通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-214" class="md-nav__link">
+    FR-214 系统管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 市
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 市">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-301" class="md-nav__link">
+    FR-301 数据审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-302" class="md-nav__link">
+    FR-302 通知发布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-303" class="md-nav__link">
+    FR-303 密码修改
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../non-functional-requirements/" class="md-nav__link">
+        非功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        外部接口
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 企业
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 企业">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-101" class="md-nav__link">
+    FR-101 企业信息修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-102" class="md-nav__link">
+    FR-102 备案上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-103" class="md-nav__link">
+    FR-103 数据填报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-104" class="md-nav__link">
+    FR-104 数据查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-105" class="md-nav__link">
+    FR-105 密码修改
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 省
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 省">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-201" class="md-nav__link">
+    FR-201 企业备案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-202" class="md-nav__link">
+    FR-202 企业查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-203" class="md-nav__link">
+    FR-203 报表管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-204" class="md-nav__link">
+    FR-204 数据修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-205" class="md-nav__link">
+    FR-205 数据删除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-206" class="md-nav__link">
+    FR-206 数据退回
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-207" class="md-nav__link">
+    FR-207 数据汇总
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-208" class="md-nav__link">
+    FR-208 数据导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-209" class="md-nav__link">
+    FR-209 数据查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-210" class="md-nav__link">
+    FR-210 多维分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-211" class="md-nav__link">
+    FR-211 图表分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-212" class="md-nav__link">
+    FR-212 发布通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-214" class="md-nav__link">
+    FR-214 系统管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 市
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 市">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fr-301" class="md-nav__link">
+    FR-301 数据审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-302" class="md-nav__link">
+    FR-302 通知发布
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fr-303" class="md-nav__link">
+    FR-303 密码修改
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="3">3 功能需求</h1>
+<h2 id="31">3.1 企业</h2>
+<h3 id="fr-101"><strong>FR-101 企业信息修改</strong></h3>
+<p>企业用户可修改本企业的基础信息。修改完成后需保存并上报至省局备案。企业信息需按照统一模板填写，部分字段不可修改。</p>
+<p><strong>数据说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">所属地区</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">显示企业所属地市、市县、区域，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">组织机构代码</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">只可输入字母、数字，不超过9位（统一编码规范）</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业名称</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">中文、英文</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要经营业务</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">按实际情况填写企业主要经营的业务</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系人</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">中文、英文</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系地址</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">邮政编码</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">只可填写6位数字</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系电话</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式必须符合（区号）+电话号码或者为手机号码</td>
+</tr>
+<tr>
+<td style="text-align: left;">传真</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式必须符合（区号）+电话</td>
+</tr>
+<tr>
+<td style="text-align: left;">EMAIL</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">格式必须符合xxx@xxx.xxx</td>
+</tr>
+</tbody>
+</table>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>查看当前企业信息</li>
+<li>编辑可修改字段</li>
+<li>保存修改并触发备案流程</li>
+<li>字段格式校验</li>
+</ul>
+<h3 id="fr-102"><strong>FR-102 备案上报</strong></h3>
+<p>企业完成信息填写或修改后，可将备案信息上报至省局。上报后信息进入待审核状态。</p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>提交备案信息</li>
+<li>提示提交成功</li>
+<li>查看备案状态（待审核/已通过/已退回）</li>
+<li>退回时可查看退回理由</li>
+</ul>
+<h3 id="fr-103"><strong>FR-103 数据填报</strong></h3>
+<p>企业在规定的上报期内，填报本企业的就业失业数据。填报内容需符合模板要求，若调查期就业人数低于建档期人数，则需填写减少类型及原因。</p>
+<p><strong>数据说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">建档期就业人数</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">填写初次建档时监测点就业人数</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期就业人数</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">填写本次调查期当时的监测点就业人数</td>
+</tr>
+<tr>
+<td style="text-align: left;">其他原因</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">就业人数减少类型</td>
+<td style="text-align: left;">否*</td>
+<td style="text-align: left;">关闭破产、停业整顿、经济性裁员、业务转移、自然减员、正常解除或终止劳动合同、国际因素变化影响、自然灾害、重大事件影响、其他</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因</td>
+<td style="text-align: left;">否*</td>
+<td style="text-align: left;">产业结构调整，重大技术改革，节能减排、淘汰落后产能，订单不足，原材料涨价，工资、社保等用工成本上升，自然减员，经营资金困难，税收政策变化，季节性用工，其他，自行离职，工作调动、企业内部调剂，劳动关系转移、劳务派遣</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因说明</td>
+<td style="text-align: left;">否*</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因说明</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因说明</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><em>注：当调查期就业人数小于建档期就业人数时，就业人数减少类型、主要原因及主要原因说明为必填</em></p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>填报当期数据</li>
+<li>保存草稿</li>
+<li>提交上报</li>
+<li>校验必填项及逻辑规则（数据对比、格式校验）</li>
+<li>显示填报期限提醒</li>
+</ul>
+<h3 id="fr-104"><strong>FR-104 数据查询</strong></h3>
+<p>企业用户可查询历史填报数据及其状态（如已上报、已审核、已退回等）。查询结果仅支持浏览，不支持导出。</p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>按调查期查询</li>
+<li>按数据状态筛选（草稿/已上报/已审核/已退回）</li>
+<li>查看数据详情</li>
+<li>查看审核状态及退回备注</li>
+</ul>
+<h3 id="fr-105"><strong>FR-105 密码修改</strong></h3>
+<p>企业用户可修改登录密码。修改后需重新登录。</p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>验证旧密码</li>
+<li>输入新密码并确认（密码复杂度校验）</li>
+<li>提示修改成功</li>
+</ul>
+<h2 id="32">3.2 省</h2>
+<h3 id="fr-201">FR-201 企业备案</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可查看全省各市已备案企业的详细信息，并对企业备案状态进行审核。审核通过后，企业方可进行数据填报。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>用户已登录系统并具备省级角色权限</li>
+<li>企业已完成基础信息填报并提交备案</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>企业备案状态更新为“已备案”或“已退回”</li>
+<li>已备案企业可参与后续数据填报流程</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ul>
+<li>
+<p>省级用户进入“企业备案”功能模块</p>
+</li>
+<li>
+<p>系统展示企业备案列表，默认按提交时间倒序排列</p>
+</li>
+<li>
+<p>用户可通过调查期、地区、企业名称、备案状态等条件查询企业</p>
+</li>
+<li>
+<p>用户点击企业名称查看详细备案信息</p>
+</li>
+<li>
+<p>用户对备案信息进行审核</p>
+</li>
+<li>
+<p>若信息无误，点击“审核通过”</p>
+</li>
+<li>
+<p>若信息有误，点击“退回”，并填写退回原因</p>
+</li>
+<li>
+<p>系统保存审核结果并更新备案状态</p>
+</li>
+</ul>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>用户可将当前查询结果导出为Excel文件</li>
+<li>
+<p>支持批量审核操作（可选）</p>
+</li>
+<li>
+<p><strong>数据项说明</strong></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">所属地区</td>
+<td style="text-align: left;">显示企业所属地市、市县、区域，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">组织机构代码</td>
+<td style="text-align: left;">字母/数字，不超过9位</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业名称</td>
+<td style="text-align: left;">中文/英文</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系人</td>
+<td style="text-align: left;">中文/英文</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系电话</td>
+<td style="text-align: left;">符合（区号）+电话或手机号格式</td>
+</tr>
+<tr>
+<td style="text-align: left;">备案状态</td>
+<td style="text-align: left;">待审核/已备案/已退回</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核人</td>
+<td style="text-align: left;">系统自动记录当前操作人</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核时间</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+</tbody>
+</table>
+<p><strong>7. 界面要求</strong></p>
+<ul>
+<li>列表页支持分页、排序、条件筛选</li>
+<li>详情页只读展示企业备案信息</li>
+<li>审核操作需二次确认</li>
+</ul>
+<h3 id="fr-202">FR-202 企业查询</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可根据需要对备案企业进行多条件查询，便于管理与统计。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>用户已登录并具备省级角色权限</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>无</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ol>
+<li>省级用户进入“企业查询”功能模块</li>
+<li>输入或选择查询条件（支持组合查询）</li>
+<li>点击“查询”，系统展示符合条件的企列表</li>
+<li>用户可点击企业名称查看详细信息</li>
+<li>点击“清除”可清空所有查询条件</li>
+</ol>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>支持导出查询结果为Excel文件</li>
+</ul>
+<p><strong>6. 查询条件说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">查询项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业名称</td>
+<td style="text-align: left;">模糊匹配</td>
+</tr>
+<tr>
+<td style="text-align: left;">组织机构代码</td>
+<td style="text-align: left;">精确匹配</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属地市</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属市县</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">备案状态</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期</td>
+<td style="text-align: left;">日期范围选择</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-203">FR-203 报表管理</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户对各市审核通过的企业上报数据进行最终审核，并汇总上报至部级单位。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>企业数据已通过市级审核</li>
+<li>用户具备省级审核权限</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>数据状态更新为“省级审核通过”或“已退回”</li>
+<li>已上报数据不可再次修改</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ol>
+<li>省级用户进入“报表管理”模块</li>
+<li>系统展示待审核的企业上报数据列表</li>
+<li>用户点击企业名称查看详细数据及报表</li>
+<li>用户进行审核操作：</li>
+<li>数据无误：点击“审核通过”</li>
+<li>数据有误：点击“退回修改”，填写退回原因</li>
+<li>系统更新数据状态</li>
+<li>审核通过后，用户可选择“上报至部委”</li>
+</ol>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>支持批量审核、批量退回</li>
+<li>上报操作需二次确认</li>
+</ul>
+<p><strong>6. 数据状态说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">状态</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">待省级审核</td>
+<td style="text-align: left;">企业数据已通过市级审核</td>
+</tr>
+<tr>
+<td style="text-align: left;">省级审核通过</td>
+<td style="text-align: left;">省级审核通过，可上报部委</td>
+</tr>
+<tr>
+<td style="text-align: left;">已退回</td>
+<td style="text-align: left;">退回至市级或企业</td>
+</tr>
+<tr>
+<td style="text-align: left;">已上报</td>
+<td style="text-align: left;">数据已上报至部委</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-204">FR-204 数据修改</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>对于有明显错误的企业上报数据，省级用户有权进行修正。修正后的数据需与原数据区分存储，并记录修改日志。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>数据状态为“待省级审核”或“省级审核通过”</li>
+<li>用户具备数据修改权限</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>生成修改后的数据副本</li>
+<li>原始数据保持不变</li>
+<li>系统记录修改日志</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ol>
+<li>省级用户进入“数据修改”模块</li>
+<li>按调查期、企业名称等条件定位需修改的数据</li>
+<li>查看原始数据，点击“修改”</li>
+<li>在数据填报界面进行修改</li>
+<li>保存修改内容</li>
+<li>系统生成修改记录</li>
+</ol>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>支持查看历史修改记录</li>
+<li>支持导出修改日志</li>
+</ul>
+<p><strong>6. 日志记录字段</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">修改人</td>
+<td style="text-align: left;">当前操作人</td>
+</tr>
+<tr>
+<td style="text-align: left;">修改时间</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">修改前内容</td>
+<td style="text-align: left;">JSON格式或字段级对比</td>
+</tr>
+<tr>
+<td style="text-align: left;">修改后内容</td>
+<td style="text-align: left;">JSON格式或字段级对比</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-205">FR-205 数据删除</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可删除历史数据，适用于数据清理或错误数据移除场景。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>数据状态为“已上报”或“历史数据”</li>
+<li>用户具备数据删除权限</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>数据从系统中移除</li>
+<li>系统记录删除日志</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ol>
+<li>省级用户进入“数据删除”模块</li>
+<li>按调查期、企业名称等条件选择需删除的数据</li>
+<li>点击“删除”，系统弹出二次确认框</li>
+<li>用户确认后，数据被移除</li>
+<li>系统记录删除操作</li>
+</ol>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>支持批量删除</li>
+<li>删除前可预览数据内容</li>
+</ul>
+<p><strong>6. 删除日志字段</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">删除人</td>
+<td style="text-align: left;">当前操作人</td>
+</tr>
+<tr>
+<td style="text-align: left;">删除时间</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">删除数据</td>
+<td style="text-align: left;">数据摘要或ID列表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-206">FR-206 数据退回</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>对于不符合要求的企业上报数据，省级用户可将其退回至上一级（市级或企业），并附上退回原因。</p>
+<p><strong>2. 前置条件</strong></p>
+<ul>
+<li>数据状态为“待省级审核”</li>
+<li>用户具备退回权限</li>
+</ul>
+<p><strong>3. 后置条件</strong></p>
+<ul>
+<li>数据状态更新为“已退回”</li>
+<li>企业端可见退回原因并可重新填报</li>
+</ul>
+<p><strong>4. 基本流程</strong></p>
+<ol>
+<li>省级用户进入“数据退回”模块</li>
+<li>选择一条或多条待审核数据</li>
+<li>点击“退回”，弹出退回说明填写框</li>
+<li>填写退回原因（必填）</li>
+<li>确认退回，系统更新数据状态</li>
+<li>系统记录退回日志</li>
+</ol>
+<p><strong>5. 扩展流程</strong></p>
+<ul>
+<li>支持批量退回</li>
+<li>退回原因支持模板选择</li>
+</ul>
+<p><strong>6. 退回日志字段</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">退回人</td>
+<td style="text-align: left;">当前操作人</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回时间</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回原因</td>
+<td style="text-align: left;">用户填写内容</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回数据</td>
+<td style="text-align: left;">数据ID列表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-207">FR-207 数据汇总</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可根据不同的调查期，查看全省范围内企业就业失业数据的汇总统计信息。汇总数据以表格形式展示，便于宏观掌握全省就业岗位变动情况。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p>相关调查期内存在已上报的数据。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>无。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>省级用户进入“数据汇总”功能模块。</p>
+<p>系统默认展示最新调查期的汇总数据。</p>
+<p>用户可通过下拉选择其他调查期，切换汇总数据视图。</p>
+<p>系统根据选定的调查期，重新计算并展示汇总信息。</p>
+<p><strong>5. 数据说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">汇总指标</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业总数</td>
+<td style="text-align: left;">已备案且已填报的企业总数</td>
+</tr>
+<tr>
+<td style="text-align: left;">建档期总岗位数</td>
+<td style="text-align: left;">所有企业建档期就业人数之和</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期总岗位数</td>
+<td style="text-align: left;">所有企业调查期就业人数之和</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位变化总数</td>
+<td style="text-align: left;">调查期总岗位数 - 建档期总岗位数</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位减少总数</td>
+<td style="text-align: left;">统计所有就业人数减少的企业，其减少人数之和</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位变化数量占比</td>
+<td style="text-align: left;">(岗位变化总数 / 建档期总岗位数) * 100%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6. 相关功能</strong></p>
+<p>统计： 系统自动计算并展示选定调查期的汇总数据。</p>
+<p>导出： 支持将当前汇总表格导出为Excel文件。</p>
+<h3 id="fr-208">FR-208 数据导出</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可根据报送期、企业信息、报表类型等条件，将系统中的企业基础信息、企业填报数据等导出为Excel文件，用于离线分析或存档。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>系统生成并导出Excel文件。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>省级用户进入“数据导出”功能模块。</p>
+<p>选择导出类型（如：企业信息、企业报表）。</p>
+<p>选择导出数据的调查期（报送期）。</p>
+<p>选择或输入其他筛选条件（如：所属地区、企业性质等）。</p>
+<p>点击“导出”，系统开始生成文件。</p>
+<p>导出完成后，浏览器自动下载文件。</p>
+<p><strong>5. 扩展流程</strong></p>
+<p>若数据量较大，系统可提示“正在后台生成，请稍后”或支持异步导出。</p>
+<p>用户可导出当前查询列表（如“企业备案”列表或“报表管理”列表）的结果。</p>
+<p><strong>6. 相关功能</strong></p>
+<p>导出企业信息： 按条件导出企业基础信息和备案状态。</p>
+<p>导出企业报表： 按条件导出一家或多家企业在指定调查期的就业失业数据。</p>
+<h3 id="fr-209">FR-209 数据查询</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可根据多种组合条件，对全省范围内的已创建用户（企业用户）信息进行高级查询，便于进行用户管理和数据统计。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>无。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>省级用户进入“数据查询”功能模块。</p>
+<p>输入或选择一项或多项查询条件。</p>
+<p>点击“查询”，系统展示符合条件的用户列表。</p>
+<p>点击“清除”，清空所有已输入的查询条件。</p>
+<p>点击“导出”，将当前查询结果导出为Excel文件。</p>
+<p><strong>5. 查询条件说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">查询项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单位名称</td>
+<td style="text-align: left;">模糊匹配</td>
+</tr>
+<tr>
+<td style="text-align: left;">登陆账号</td>
+<td style="text-align: left;">精确匹配</td>
+</tr>
+<tr>
+<td style="text-align: left;">用户类型</td>
+<td style="text-align: left;">下拉选择（如：企业用户）</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属地市</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属市县</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">所处区域</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">数据状态</td>
+<td style="text-align: left;">下拉选择（如：已备案、已上报）</td>
+</tr>
+<tr>
+<td style="text-align: left;">单位性质</td>
+<td style="text-align: left;">下拉选择（企业性质）</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业</td>
+<td style="text-align: left;">下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">起始日期</td>
+<td style="text-align: left;">日期选择器（如：备案起始日期）</td>
+</tr>
+<tr>
+<td style="text-align: left;">结束日期</td>
+<td style="text-align: left;">日期选择器（如：备案结束日期）</td>
+</tr>
+<tr>
+<td style="text-align: left;">统计月份</td>
+<td style="text-align: left;">月份选择器</td>
+</tr>
+<tr>
+<td style="text-align: left;">统计季度</td>
+<td style="text-align: left;">季度选择器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-210">FR-210 多维分析</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可通过多维分析功能，从地区、企业性质、行业等多个维度，对全省企业的岗位变动情况进行交叉分析，深入洞察就业市场结构变化。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p>存在已上报的数据。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>无。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>省级用户进入“多维分析”功能模块。</p>
+<p>选择一个或多个分析维度（如：先选择地区，再选择行业）。</p>
+<p>系统根据所选维度，动态生成交叉分析表。</p>
+<p>分析表展示不同维度组合下的岗位变化指标。</p>
+<p>用户可切换分析指标，如岗位变化总数、岗位变化数量占比等。</p>
+<p><strong>5. 分析维度示例</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">地区</td>
+<td style="text-align: left;">按州市、区县进行细分</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质</td>
+<td style="text-align: left;">按国有、民营、外资等性质划分</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业</td>
+<td style="text-align: left;">按国民经济行业分类进行细分</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业规模</td>
+<td style="text-align: left;">按人数规模划分（如：0-50人，51-200人）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6. 数据说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分析指标</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">岗位变化总数</td>
+<td style="text-align: left;">调查期总岗位数 - 建档期总岗位数</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位变化数量占比</td>
+<td style="text-align: left;">(岗位变化总数 / 建档期总岗位数) * 100%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-211">FR-211 图表分析</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可通过折线图、柱状图、表格等形式，直观对比两个不同调查期内的企业岗位变动情况，分析就业形势的变化趋势。</p>
+<p>省级用户可通过折线图、表格等形式，展示多个连续调查期内的企业岗位变动趋势，以把握就业市场的长期动态。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p>存在至少两个调查期的上报数据。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>无。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>省级用户进入“图表分析” -&gt; “对比分析”子模块。</p>
+<p>选择“调查期A”和“调查期B”。</p>
+<p>选择分析方式（分析维度）：地区、企业性质或行业。</p>
+<p>可选样本条件：按地区、企业性质、行业进行筛选。</p>
+<p>点击“查询分析”，系统生成分析结果。</p>
+<p>结果以表格和柱状图/折线图两种形式展示对比数据。</p>
+<p>省级用户进入“图表分析” -&gt; “趋势分析”子模块。</p>
+<p>选择一个连续的时间段（如：2023年第一季度至2024年第一季度）。</p>
+<p>选择分析维度（如：总体趋势、按地区、按企业性质）。</p>
+<p>点击“查询分析”，系统生成分析结果。</p>
+<p>结果以折线图和表格形式展示，X轴为调查期，Y轴为分析指标。</p>
+<p><strong>5. 数据说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分析指标</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业总数</td>
+<td style="text-align: left;">两个调查期内均存在的企业总数（可比样本）</td>
+</tr>
+<tr>
+<td style="text-align: left;">建档期总岗位数</td>
+<td style="text-align: left;">在调查期A的建档期（初始期）的岗位数</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期总岗位数</td>
+<td style="text-align: left;">在调查期B的岗位数</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位变化总数</td>
+<td style="text-align: left;">调查期总岗位数 - 建档期总岗位数</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位减少总数</td>
+<td style="text-align: left;">统计从调查期A到调查期B期间，就业人数减少的企业，其减少人数之和</td>
+</tr>
+<tr>
+<td style="text-align: left;">岗位变化数量占比</td>
+<td style="text-align: left;">(岗位变化总数 / 建档期总岗位数) * 100%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分析指标</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">岗位变化数量占比</td>
+<td style="text-align: left;">(岗位变化总数 / 建档期总岗位数) * 100%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fr-212">FR-212 发布通知</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可向全省或指定范围内的用户发布、删除通知信息，用于发布政策、公告、填报提醒等。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>新增/修改/删除的通知在目标用户端生效。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>列表： 进入“发布通知”模块，系统默认展示当前用户发布的所有通知列表，包含标题、发布时间、发布单位等信息。</p>
+<p>新增： 点击“新增”，填写通知标题、内容后发布。</p>
+<p>修改： 选择一条通知，进行修改后保存。</p>
+<p>删除： 选择一条通知，确认后删除。</p>
+<p><strong>5. 数据说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">通知标题</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">50字以内</td>
+</tr>
+<tr>
+<td style="text-align: left;">通知内容</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">2000字以内</td>
+</tr>
+<tr>
+<td style="text-align: left;">发布时间</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">系统自动生成</td>
+</tr>
+<tr>
+<td style="text-align: left;">发布单位</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">系统自动生成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6. 相关功能</strong></p>
+<p>列表： 展示所有已发布的通知，支持按标题、时间排序。</p>
+<p>新增： 发布新通知。</p>
+<p>修改： 修改通知内容。</p>
+<p>删除： 删除通知，删除后用户端不可见。</p>
+<p>发布范围： （可选）可设定通知的接收范围，如全省、指定地市。</p>
+<h3 id="fr-214">FR-214 系统管理</h3>
+<p><strong>1. 功能描述</strong></p>
+<p>省级用户可新增或修改调查期，设定企业数据填报的开始与截止时间。</p>
+<p>省级用户可创建、管理省本级和企业的用户账号，并为用户分配角色。</p>
+<p>省级用户可根据管理需要，定义和修改角色，并为不同角色分配不同的功能权限。系统预定义一些基础角色。</p>
+<p>省级用户可查看当前系统的运行情况，包括服务器CPU、内存、硬盘等硬件资源信息，以及系统运行状态、用户活跃度等应用信息。</p>
+<p><strong>2. 前置条件</strong></p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p>省级用户可创建、管理省本级和企业的用户账号，并为用户分配角色。</p>
+<p>用户已登录系统并具备省级角色权限。</p>
+<p><strong>3. 后置条件</strong></p>
+<p>新的上报时限对全省企业和各级管理部门生效。</p>
+<p>新增/修改/删除的用户信息生效。</p>
+<p>新增/修改/删除的角色及其权限配置生效。</p>
+<p><strong>4. 基本流程</strong></p>
+<p>进入“系统管理” -&gt; “上报时限”子模块。</p>
+<p>新增： 点击“新增”，填写调查期名称（如“2024年第一季度”）、填报开始日期、填报结束日期，确认后保存。</p>
+<p>修改： 在列表中，选择一个调查期，修改其填报开始/结束日期，确认后保存。</p>
+<p>删除： 对于未开始或已过期的调查期，可选择删除。</p>
+<p>进入“系统管理” -&gt; “用户管理”子模块，查看所有用户列表。</p>
+<p>新增： 点击“新增”，填写用户信息（账号、密码、姓名、所属单位、联系电话等），并为其分配一个或多个角色。</p>
+<p>修改： 在列表中选择一个用户，修改其基本信息或角色。</p>
+<p>删除： 在列表中选择一个用户进行删除。若该用户已有上报数据，系统应提示“该用户已有上报数据，无法删除”，如需删除需先处理其关联数据。</p>
+<p>进入“系统管理” -&gt; “角色管理”子模块，查看所有角色列表。</p>
+<p>角色定义： 点击“新增角色”，填写角色名称，然后在权限树中勾选该角色可访问的功能模块，保存后即创建一个新角色。</p>
+<p>角色修改： 在列表中选择一个角色，修改其权限分配。</p>
+<p>角色删除： 在列表中选择一个角色进行删除。若该角色已分配给用户，系统应提示“该角色已分配给用户，删除后需为相关用户重新分配角色”，确认后删除角色及其与用户的关联关系。</p>
+<p>进入“系统管理” -&gt; “系统监控”子模块。</p>
+<p>系统以仪表盘、图表等形式展示各项监控指标。</p>
+<p>用户可查看实时或近期的监控数据。</p>
+<p><strong>5. 数据说明</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">调查期名称</td>
+<td style="text-align: left;">如“2024年第一季度”</td>
+</tr>
+<tr>
+<td style="text-align: left;">开始日期</td>
+<td style="text-align: left;">企业可开始填报的日期</td>
+</tr>
+<tr>
+<td style="text-align: left;">结束日期</td>
+<td style="text-align: left;">企业必须完成填报的日期</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">登录账号</td>
+<td style="text-align: left;">唯一标识，不可重复</td>
+</tr>
+<tr>
+<td style="text-align: left;">用户姓名</td>
+<td style="text-align: left;">中文、英文</td>
+</tr>
+<tr>
+<td style="text-align: left;">用户类型</td>
+<td style="text-align: left;">省用户/市用户/企业用户</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属单位</td>
+<td style="text-align: left;">关联的单位信息</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系电话</td>
+<td style="text-align: left;">手机号码</td>
+</tr>
+<tr>
+<td style="text-align: left;">角色</td>
+<td style="text-align: left;">从角色库中选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">状态</td>
+<td style="text-align: left;">启用/禁用</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">监控项</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">硬件信息</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CPU 使用率</td>
+<td style="text-align: left;">当前服务器的CPU占用百分比</td>
+</tr>
+<tr>
+<td style="text-align: left;">内存使用率</td>
+<td style="text-align: left;">当前服务器的内存占用百分比</td>
+</tr>
+<tr>
+<td style="text-align: left;">硬盘使用率</td>
+<td style="text-align: left;">当前服务器的硬盘空间占用情况</td>
+</tr>
+<tr>
+<td style="text-align: left;">应用信息</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">在线用户数</td>
+<td style="text-align: left;">当前登录系统的用户数量</td>
+</tr>
+<tr>
+<td style="text-align: left;">活跃会话数</td>
+<td style="text-align: left;">系统当前活跃的会话数量</td>
+</tr>
+<tr>
+<td style="text-align: left;">接口响应时间</td>
+<td style="text-align: left;">关键业务接口的平均响应时间</td>
+</tr>
+<tr>
+<td style="text-align: left;">错误日志数</td>
+<td style="text-align: left;">近期系统产生的错误日志数量</td>
+</tr>
+</tbody>
+</table>
+<h2 id="33">3.3 市</h2>
+<h3 id="fr-301"><strong>FR-301 数据审核</strong></h3>
+<p>市级用户审核辖区内企业上报的就业失业数据。审核通过后数据可上报至省级。</p>
+<p><strong>数据说明：</strong></p>
+<p>审核内容为企业填报数据（详见FR-103数据说明）</p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>列表展示待审核数据（分页显示，可按企业名称、调查期筛选）</li>
+<li>查看企业填报详情（包含历史填报记录）</li>
+<li>审核通过/退回（退回时需填写退回理由）</li>
+<li>批量审核功能</li>
+<li>查看审核记录（审核人、审核时间、审核结果）</li>
+</ul>
+<h3 id="fr-302"><strong>FR-302 通知发布</strong></h3>
+<p>市级用户可向辖区内企业发布通知。通知内容需包含标题、正文、发布时间等信息。</p>
+<p><strong>数据说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数据项</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">通知标题</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">50字以内</td>
+</tr>
+<tr>
+<td style="text-align: left;">通知内容</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">2000字以内</td>
+</tr>
+<tr>
+<td style="text-align: left;">发布时间</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">系统自动生成</td>
+</tr>
+<tr>
+<td style="text-align: left;">发布单位</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">系统自动生成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>新增通知（填写标题、内容）</li>
+<li>修改通知（仅可修改未过期的通知）</li>
+<li>删除通知</li>
+<li>查看已发布通知列表（按发布时间倒序）</li>
+<li>通知阅读统计（可选）</li>
+</ul>
+<h3 id="fr-303"><strong>FR-303 密码修改</strong></h3>
+<p>市级用户可修改登录密码。修改后需重新登录。</p>
+<p><strong>相关功能：</strong></p>
+<ul>
+<li>验证旧密码</li>
+<li>输入新密码并确认（密码复杂度校验：长度、字符类型）</li>
+<li>提示修改成功</li>
+<li>记录密码修改日志</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../overall-description/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 总体描述" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              总体描述
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../non-functional-requirements/" class="md-footer__link md-footer__link--next" aria-label="Next: 非功能需求" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              非功能需求
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

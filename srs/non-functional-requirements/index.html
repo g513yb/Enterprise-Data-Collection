@@ -1,0 +1,671 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>非功能需求 - 需求规格说明书</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="需求规格说明书" class="md-header__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            需求规格说明书
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              非功能需求
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="需求规格说明书" class="md-nav__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    需求规格说明书
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        引言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overall-description/" class="md-nav__link">
+        总体描述
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-requirements/" class="md-nav__link">
+        功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          非功能需求
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        非功能需求
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    4.1 性能需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 安全需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    4.3 可用性需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    4.4 可靠性需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    4.5 可维护性需求
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        外部接口
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    4.1 性能需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 安全需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    4.3 可用性需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    4.4 可靠性需求
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    4.5 可维护性需求
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="4">4 非功能需求</h1>
+<h2 id="41">4.1 性能需求</h2>
+<p>系统需确保在全省范围内的高频访问下具备良好的响应能力。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">需求名称</th>
+<th style="text-align: left;">需求描述</th>
+<th style="text-align: left;">验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>NFR-101</strong></td>
+<td style="text-align: left;"><strong>并发负载能力</strong></td>
+<td style="text-align: left;">系统必须能够承载全省各市、县、企业级用户在上报期内的集中式高频访问压力。</td>
+<td style="text-align: left;">在模拟 500 个用户同时执行“数据提交”操作的压力测试下，系统失败率需低于 0.1%，且 CPU 占用率平稳保持在 75% 以下。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-102</strong></td>
+<td style="text-align: left;"><strong>交互响应效率</strong></td>
+<td style="text-align: left;">针对企业端的基础业务操作（如登录验证、备案信息修改等），系统需提供即时的反馈体验。</td>
+<td style="text-align: left;">95% 以上的常规页面请求（HTTP Get/Post）端到端响应时间不得超过 2 秒。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-103</strong></td>
+<td style="text-align: left;"><strong>大数据处理性能</strong></td>
+<td style="text-align: left;">针对省级用户发起的全省范围就业数据汇总、多维趋势分析及导出任务。</td>
+<td style="text-align: left;">涉及全省数万条记录的对比分析报表及图形化统计（饼图、折线图等）应在 15 秒内完成计算并准确呈现。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="42">4.2 安全需求</h2>
+<p>系统需构建严密的安全防御体系，保障政务数据的机密性与完整性。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">需求名称</th>
+<th style="text-align: left;">需求描述</th>
+<th style="text-align: left;">验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>NFR-201</strong></td>
+<td style="text-align: left;"><strong>三级权限隔离 (RBAC)</strong></td>
+<td style="text-align: left;">系统必须建立严密的基于角色的访问控制模型，严禁跨权限范围的垂直或水平越权访问。</td>
+<td style="text-align: left;">经过渗透测试，企业级用户严禁访问管理端页面，市级用户严禁跨区域查看非辖区企业数据，权限覆盖率达到 100%。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-202</strong></td>
+<td style="text-align: left;"><strong>全生命周期审计留痕</strong></td>
+<td style="text-align: left;">对所有涉及数据状态变更的操作（如修改、删除、审核退回）实施全过程记录，确保行政审批的可追溯性。</td>
+<td style="text-align: left;">审计日志必须完整记录操作人、IP、精确时间戳及修改前后的关键数值对比，且日志具备只读属性。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-203</strong></td>
+<td style="text-align: left;"><strong>敏感数据存储加密</strong></td>
+<td style="text-align: left;">针对系统涉及的企业核心信息及用户鉴权凭证，采用行业标准加密算法进行深度脱敏保护。</td>
+<td style="text-align: left;">数据库中用户密码必须采用 salt 加盐的哈希算法（如 SHA-256）存储。关键业务数据传输需通过 HTTPS 加密。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="43">4.3 可用性需求</h2>
+<p>系统需兼顾不同层级用户的操作习惯与技术能力，提供简洁、直观、易上手的交互体验，降低培训成本与误操作率。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">需求名称</th>
+<th style="text-align: left;">需求描述</th>
+<th style="text-align: left;">验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>NFR-301</strong></td>
+<td style="text-align: left;"><strong>界面友好性与一致性</strong></td>
+<td style="text-align: left;">系统界面风格应统一、简洁，符合政务系统视觉规范，功能模块布局清晰，操作路径合理。</td>
+<td style="text-align: left;">经用户测试，90% 以上的首次使用者可在无培训情况下完成“数据填报”核心操作。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-302</strong></td>
+<td style="text-align: left;"><strong>输入校验与错误提示</strong></td>
+<td style="text-align: left;">系统需对关键字段（如组织机构代码、联系电话、邮箱等）进行实时格式校验，并提供明确的错误提示。</td>
+<td style="text-align: left;">测试中，输入错误格式数据时，系统应弹出红色提示框，并明确说明错误字段及修正建议。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-303</strong></td>
+<td style="text-align: left;"><strong>多浏览器兼容性</strong></td>
+<td style="text-align: left;">系统需兼容主流浏览器（Chrome、Edge、Firefox），确保在不同终端下功能一致、显示正常。</td>
+<td style="text-align: left;">在以上浏览器的最新版本中执行核心业务流程，页面布局无错乱，功能无失效。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-304</strong></td>
+<td style="text-align: left;"><strong>数据可视化支持</strong></td>
+<td style="text-align: left;">系统需支持以图表形式（如饼图、折线图）直观展示就业数据趋势，并提供 Excel 导出功能。</td>
+<td style="text-align: left;">在省级用户查询全省数据时，系统应自动生成可视化图表，并提供一键导出功能，导出数据完整无误。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="44">4.4 可靠性需求</h2>
+<p>系统需具备高可用性与容错能力，确保在全省企业集中上报期内稳定运行，保障数据的一致性与完整性。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">需求名称</th>
+<th style="text-align: left;">需求描述</th>
+<th style="text-align: left;">验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>NFR-401</strong></td>
+<td style="text-align: left;"><strong>系统可用性保障</strong></td>
+<td style="text-align: left;">系统需提供 7×24 小时连续服务，年可用率不低于 99.9%，年非计划停机时间不超过 8 小时。</td>
+<td style="text-align: left;">监控系统记录的年可用性指标 ≥ 99.9%，非计划停机累计时间 ≤ 8 小时。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-402</strong></td>
+<td style="text-align: left;"><strong>事务一致性与完整性</strong></td>
+<td style="text-align: left;">系统需通过数据库事务机制，确保数据在填报、审核、退回等操作中的原子性与一致性。</td>
+<td style="text-align: left;">在并发测试中，数据提交失败或异常中断时，数据库状态应回滚至操作前状态，无数据丢失或重复。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-403</strong></td>
+<td style="text-align: left;"><strong>实时监控与自动预警</strong></td>
+<td style="text-align: left;">系统需内置监控模块，实时采集 CPU、内存、磁盘 I/O 等关键指标，并在资源超限时触发预警。</td>
+<td style="text-align: left;">当 CPU 使用率连续 3 分钟超过 85% 时，系统应通过邮件或短信通知运维人员。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-404</strong></td>
+<td style="text-align: left;"><strong>故障恢复能力</strong></td>
+<td style="text-align: left;">系统应具备自动或手动的故障恢复机制，确保在硬件或网络故障后能快速恢复服务。</td>
+<td style="text-align: left;">在模拟故障测试中，系统应在 30 分钟内恢复服务，数据不丢失。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="45">4.5 可维护性需求</h2>
+<p>系统需具备良好的可维护性，便于后续功能扩展、问题排查与系统升级。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">需求名称</th>
+<th style="text-align: left;">需求描述</th>
+<th style="text-align: left;">验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>NFR-501</strong></td>
+<td style="text-align: left;"><strong>模块化与可扩展性</strong></td>
+<td style="text-align: left;">系统应采用分层架构设计，业务逻辑与数据访问分离，支持后续模块的平滑扩展。</td>
+<td style="text-align: left;">在新增业务模块时，无需修改现有核心代码，仅需新增模块并配置路由即可上线。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-502</strong></td>
+<td style="text-align: left;"><strong>日志分级与可读性</strong></td>
+<td style="text-align: left;">系统日志需按级别（INFO、WARN、ERROR）分类输出，便于问题追踪与性能分析。</td>
+<td style="text-align: left;">运维人员可根据日志快速定位错误发生的时间、模块及异常堆栈信息。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-503</strong></td>
+<td style="text-align: left;"><strong>配置管理能力</strong></td>
+<td style="text-align: left;">系统关键参数（如上报时间窗口、并发阈值、预警阈值等）应支持动态配置与热加载。</td>
+<td style="text-align: left;">修改配置后无需重启服务即可生效，配置项变更记录可查。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFR-504</strong></td>
+<td style="text-align: left;"><strong>自动化备份与恢复机制</strong></td>
+<td style="text-align: left;">系统需支持定期自动备份数据库与关键文件，并提供一键恢复功能。</td>
+<td style="text-align: left;">备份任务每日执行，恢复测试中可在 1 小时内恢复至最近备份点。</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../functional-requirements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 功能需求" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              功能需求
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../interfaces/" class="md-footer__link md-footer__link--next" aria-label="Next: 外部接口" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              外部接口
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

@@ -1,0 +1,1884 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>云南省企业就业失业数据采集系统 - 需求规格说明书</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="需求规格说明书" class="md-header__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            需求规格说明书
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              云南省企业就业失业数据采集系统
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="需求规格说明书" class="md-nav__button md-logo" aria-label="需求规格说明书" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    需求规格说明书
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        引言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overall-description/" class="md-nav__link">
+        总体描述
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-requirements/" class="md-nav__link">
+        功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../non-functional-requirements/" class="md-nav__link">
+        非功能需求
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interfaces/" class="md-nav__link">
+        外部接口
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">云南省企业就业失业数据采集系统</h1>
+<h1 id="_2">接口需求说明书（前半部分）</h1>
+<blockquote>
+<p><strong>文档版本：</strong> 1.0<br />
+<strong>文档状态：</strong> 草稿<br />
+<strong>关联文档：</strong> 功能需求说明书（functional-requirements.md）</p>
+</blockquote>
+<hr />
+<h2 id="_3">目录</h2>
+<ul>
+<li><a href="#1-概述">1. 概述</a></li>
+<li><a href="#2-术语说明">2. 术语说明</a></li>
+<li><a href="#3-通用接口规范">3. 通用接口规范</a></li>
+<li><a href="#31-数据交换格式">3.1 数据交换格式</a></li>
+<li><a href="#32-字符编码">3.2 字符编码</a></li>
+<li><a href="#33-日期与时间格式">3.3 日期与时间格式</a></li>
+<li><a href="#34-错误码说明">3.4 错误码说明</a></li>
+<li><a href="#4-接口总览">4. 接口总览</a></li>
+<li><a href="#5-企业端接口">5. 企业端接口</a></li>
+<li><a href="#51-if-01-企业备案上报接口">5.1 IF-01 企业备案上报接口</a></li>
+<li><a href="#52-if-02-备案审核结果查询接口">5.2 IF-02 备案审核结果查询接口</a></li>
+<li><a href="#53-if-03-就业数据草稿保存接口">5.3 IF-03 就业数据草稿保存接口</a></li>
+<li><a href="#54-if-04-就业数据正式上报接口">5.4 IF-04 就业数据正式上报接口</a></li>
+<li><a href="#55-if-05-企业历史数据查询接口">5.5 IF-05 企业历史数据查询接口</a></li>
+<li><a href="#6-市级审核接口">6. 市级审核接口</a></li>
+<li><a href="#61-if-06-市级数据审核接口">6.1 IF-06 市级数据审核接口</a></li>
+<li><a href="#62-if-07-市级数据退回接口">6.2 IF-07 市级数据退回接口</a></li>
+</ul>
+<hr />
+<h2 id="1">1. 概述</h2>
+<p>本文档定义<strong>云南省企业就业失业数据采集系统</strong>的数据采集接口需求，是功能需求说明书的配套接口设计文档。</p>
+<p>系统涉及三级用户：<strong>企业（FR-1xx）</strong>、<strong>市局（FR-3xx）</strong>、<strong>省局（FR-2xx）</strong>，并需与<strong>国家失业监测系统</strong>进行数据对接。本文件（前半部分）覆盖企业端与市级审核的所有数据采集接口。</p>
+<p><strong>前半部分接口范围：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">编号</th>
+<th style="text-align: left;">接口名称</th>
+<th style="text-align: left;">方向</th>
+<th style="text-align: left;">对应功能需求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">IF-01</td>
+<td style="text-align: left;">企业备案上报</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">FR-102</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-02</td>
+<td style="text-align: left;">备案审核结果查询</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">FR-102</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-03</td>
+<td style="text-align: left;">就业数据草稿保存</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">FR-103</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-04</td>
+<td style="text-align: left;">就业数据正式上报</td>
+<td style="text-align: left;">企业 → 省局（经市局）</td>
+<td style="text-align: left;">FR-103</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-05</td>
+<td style="text-align: left;">企业历史数据查询</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">FR-104</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-06</td>
+<td style="text-align: left;">市级数据审核</td>
+<td style="text-align: left;">市局 → 省局</td>
+<td style="text-align: left;">FR-301</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-07</td>
+<td style="text-align: left;">市级数据退回</td>
+<td style="text-align: left;">市局 → 企业</td>
+<td style="text-align: left;">FR-301</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>后半部分</strong>将覆盖：省局数据汇总上报（IF-08）、省局数据退回（IF-09）、通知发布（IF-10）、系统管理（IF-11）等接口。</p>
+</blockquote>
+<hr />
+<h2 id="2">2. 术语说明</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">术语</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">调查期</td>
+<td style="text-align: left;">省局配置的数据填报窗口期，格式为年月（如 <code>202403</code>）或年季（如 <code>2024Q1</code>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">上报期</td>
+<td style="text-align: left;">同"调查期"，指企业必须在此期间内完成数据填报的时间范围</td>
+</tr>
+<tr>
+<td style="text-align: left;">备案</td>
+<td style="text-align: left;">企业将基础信息提交至省局，经省局审核通过后方可参与后续填报的流程</td>
+</tr>
+<tr>
+<td style="text-align: left;">组织机构代码</td>
+<td style="text-align: left;">企业统一编码，仅含字母和数字，不超过9位</td>
+</tr>
+<tr>
+<td style="text-align: left;">建档期就业人数</td>
+<td style="text-align: left;">企业初次建档时填写的监测点就业人数</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期就业人数</td>
+<td style="text-align: left;">本次调查期内企业监测点当时的就业人数</td>
+</tr>
+<tr>
+<td style="text-align: left;">就业人数减少类型</td>
+<td style="text-align: left;">当调查期就业人数低于建档期时，必须填写的减少原因分类</td>
+</tr>
+<tr>
+<td style="text-align: left;">数据状态</td>
+<td style="text-align: left;">数据在系统工作流中的当前状态（见各接口状态说明）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">3. 通用接口规范</h2>
+<h3 id="31">3.1 数据交换格式</h3>
+<p>所有接口采用 <strong>XML</strong> 格式进行数据交换，统一使用以下请求信封：</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Request&gt;
+  &lt;Header&gt;
+    &lt;SystemID&gt;YNYJSJ&lt;/SystemID&gt;           &lt;!-- 云南省就业失业数据采集系统 --&gt;
+    &lt;Version&gt;1.0&lt;/Version&gt;
+    &lt;Timestamp&gt;2024-03-01T09:00:00&lt;/Timestamp&gt;
+    &lt;RequestID&gt;REQ20240301090000001&lt;/RequestID&gt;
+  &lt;/Header&gt;
+  &lt;Body&gt;
+    &lt;!-- 各接口业务数据 --&gt;
+  &lt;/Body&gt;
+&lt;/Request&gt;
+</code></pre>
+<p>所有接口返回统一响应信封：</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Response&gt;
+  &lt;Header&gt;
+    &lt;RequestID&gt;REQ20240301090000001&lt;/RequestID&gt;
+    &lt;Timestamp&gt;2024-03-01T09:00:05&lt;/Timestamp&gt;
+  &lt;/Header&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;操作成功&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;!-- 各接口返回数据 --&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<hr />
+<h3 id="32">3.2 字符编码</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">属性</th>
+<th style="text-align: left;">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">编码</td>
+<td style="text-align: left;">UTF-8</td>
+</tr>
+<tr>
+<td style="text-align: left;">语言</td>
+<td style="text-align: left;">简体中文（zh-CN）</td>
+</tr>
+<tr>
+<td style="text-align: left;">换行符</td>
+<td style="text-align: left;">CRLF（<code>\r\n</code>）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33">3.3 日期与时间格式</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">格式</th>
+<th style="text-align: left;">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">日期</td>
+<td style="text-align: left;"><code>YYYY-MM-DD</code></td>
+<td style="text-align: left;"><code>2024-03-01</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;"><code>YYYY-MM-DDTHH:mm:ss</code></td>
+<td style="text-align: left;"><code>2024-03-01T09:00:00</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期（月度）</td>
+<td style="text-align: left;"><code>YYYYMM</code></td>
+<td style="text-align: left;"><code>202403</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期（季度）</td>
+<td style="text-align: left;"><code>YYYYQ#</code></td>
+<td style="text-align: left;"><code>2024Q1</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34">3.4 错误码说明</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">错误码</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>0000</code></td>
+<td style="text-align: left;">成功</td>
+<td style="text-align: left;">请求处理成功</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1001</code></td>
+<td style="text-align: left;">参数错误</td>
+<td style="text-align: left;">必填字段缺失或格式不符合要求</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1002</code></td>
+<td style="text-align: left;">身份验证失败</td>
+<td style="text-align: left;">系统标识或凭证无法通过验证</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1003</code></td>
+<td style="text-align: left;">重复提交</td>
+<td style="text-align: left;">相同主键的记录已存在</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1004</code></td>
+<td style="text-align: left;">不在上报期内</td>
+<td style="text-align: left;">当前时间不在任何开放的调查期窗口内</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1005</code></td>
+<td style="text-align: left;">备案未通过</td>
+<td style="text-align: left;">企业尚未完成备案审核，不可进行数据填报</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>2001</code></td>
+<td style="text-align: left;">记录不存在</td>
+<td style="text-align: left;">查询的记录不存在</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>2002</code></td>
+<td style="text-align: left;">状态冲突</td>
+<td style="text-align: left;">当前记录的状态不允许执行此操作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>2003</code></td>
+<td style="text-align: left;">权限不足</td>
+<td style="text-align: left;">当前用户无权执行此操作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>9999</code></td>
+<td style="text-align: left;">系统异常</td>
+<td style="text-align: left;">服务端发生未知错误</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. 接口总览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">接口编号</th>
+<th style="text-align: left;">接口名称</th>
+<th style="text-align: left;">调用方向</th>
+<th style="text-align: left;">触发时机</th>
+<th style="text-align: left;">对应功能需求</th>
+<th style="text-align: left;">是否必需</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">IF-01</td>
+<td style="text-align: left;">企业备案上报</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">企业用户提交备案信息</td>
+<td style="text-align: left;">FR-102</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-02</td>
+<td style="text-align: left;">备案审核结果查询</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">企业查询备案状态</td>
+<td style="text-align: left;">FR-102</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-03</td>
+<td style="text-align: left;">就业数据草稿保存</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">企业保存草稿</td>
+<td style="text-align: left;">FR-103</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-04</td>
+<td style="text-align: left;">就业数据正式上报</td>
+<td style="text-align: left;">企业 → 省局（经市局）</td>
+<td style="text-align: left;">企业在上报期内提交数据</td>
+<td style="text-align: left;">FR-103</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-05</td>
+<td style="text-align: left;">企业历史数据查询</td>
+<td style="text-align: left;">企业 → 省局</td>
+<td style="text-align: left;">企业查询历史填报状态</td>
+<td style="text-align: left;">FR-104</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-06</td>
+<td style="text-align: left;">市级数据审核</td>
+<td style="text-align: left;">市局 → 省局</td>
+<td style="text-align: left;">市级用户完成审核操作</td>
+<td style="text-align: left;">FR-301</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-07</td>
+<td style="text-align: left;">市级数据退回</td>
+<td style="text-align: left;">市局 → 企业</td>
+<td style="text-align: left;">市级用户退回企业数据</td>
+<td style="text-align: left;">FR-301</td>
+<td style="text-align: left;">是</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-08</td>
+<td style="text-align: left;">省局数据汇总上报</td>
+<td style="text-align: left;">省局 → 国家系统</td>
+<td style="text-align: left;">省局审核通过后上报</td>
+<td style="text-align: left;">FR-203</td>
+<td style="text-align: left;">是（后半部分）</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-09</td>
+<td style="text-align: left;">省局数据退回</td>
+<td style="text-align: left;">省局 → 市局/企业</td>
+<td style="text-align: left;">省局退回数据</td>
+<td style="text-align: left;">FR-206</td>
+<td style="text-align: left;">是（后半部分）</td>
+</tr>
+<tr>
+<td style="text-align: left;">IF-10</td>
+<td style="text-align: left;">通知发布与推送</td>
+<td style="text-align: left;">省局/市局 → 企业</td>
+<td style="text-align: left;">通知发布时触发</td>
+<td style="text-align: left;">FR-212、FR-302</td>
+<td style="text-align: left;">是（后半部分）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. 企业端接口</h2>
+<hr />
+<h3 id="51-if-01">5.1 IF-01 企业备案上报接口</h3>
+<p><strong>接口编号：</strong> <code>IF-01</code><br />
+<strong>对应功能需求：</strong> FR-102 备案上报<br />
+<strong>调用方向：</strong> 企业系统 → 省局系统<br />
+<strong>触发时机：</strong> 企业用户完成基础信息填写后点击"上报备案"<br />
+<strong>前置条件：</strong> 省级管理员已创建企业账号<br />
+<strong>后置条件：</strong> 备案记录创建，状态为<code>待审核</code></p>
+<h4 id="_4">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">校验规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业账号ID</td>
+<td style="text-align: left;"><code>&lt;EnterpriseID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">系统分配，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">组织机构代码</td>
+<td style="text-align: left;"><code>&lt;OrgCode&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">仅字母和数字，不超过9位</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业名称</td>
+<td style="text-align: left;"><code>&lt;EntName&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">中文或英文，不超过100字</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质（一级）</td>
+<td style="text-align: left;"><code>&lt;EntTypeL1&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">受控词汇，两级下拉</td>
+</tr>
+<tr>
+<td style="text-align: left;">企业性质（二级）</td>
+<td style="text-align: left;"><code>&lt;EntTypeL2&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">受控词汇，从属于一级</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业（一级）</td>
+<td style="text-align: left;"><code>&lt;IndustryL1&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">受控词汇，两级下拉</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属行业（二级）</td>
+<td style="text-align: left;"><code>&lt;IndustryL2&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">受控词汇，从属于一级</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要经营业务</td>
+<td style="text-align: left;"><code>&lt;MainBusiness&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">不超过500字</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属地市</td>
+<td style="text-align: left;"><code>&lt;RegionCity&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">云南省地区编码表，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">所属市县</td>
+<td style="text-align: left;"><code>&lt;RegionCounty&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">云南省地区编码表，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">所处区域</td>
+<td style="text-align: left;"><code>&lt;RegionDistrict&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">云南省地区编码表，不可修改</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系人</td>
+<td style="text-align: left;"><code>&lt;ContactName&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">中文或英文，不超过50字</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系地址</td>
+<td style="text-align: left;"><code>&lt;ContactAddr&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">两级下拉选择</td>
+</tr>
+<tr>
+<td style="text-align: left;">邮政编码</td>
+<td style="text-align: left;"><code>&lt;PostalCode&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">必须为6位数字</td>
+</tr>
+<tr>
+<td style="text-align: left;">联系电话</td>
+<td style="text-align: left;"><code>&lt;Phone&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式：（区号）+电话号码 或 手机号码</td>
+</tr>
+<tr>
+<td style="text-align: left;">传真</td>
+<td style="text-align: left;"><code>&lt;Fax&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式：（区号）+电话号码</td>
+</tr>
+<tr>
+<td style="text-align: left;">电子邮箱</td>
+<td style="text-align: left;"><code>&lt;Email&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">格式须符合 <code>xxx@xxx.xxx</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_5">请求示例</h4>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Request&gt;
+  &lt;Header&gt;
+    &lt;SystemID&gt;YNYJSJ&lt;/SystemID&gt;
+    &lt;Version&gt;1.0&lt;/Version&gt;
+    &lt;Timestamp&gt;2024-03-01T09:00:00&lt;/Timestamp&gt;
+    &lt;RequestID&gt;REQ20240301090000001&lt;/RequestID&gt;
+  &lt;/Header&gt;
+  &lt;Body&gt;
+    &lt;Interface&gt;IF-01&lt;/Interface&gt;
+    &lt;EnterpriseID&gt;ENT000123&lt;/EnterpriseID&gt;
+    &lt;OrgCode&gt;A12345678&lt;/OrgCode&gt;
+    &lt;EntName&gt;云南示例科技有限公司&lt;/EntName&gt;
+    &lt;EntTypeL1&gt;有限责任公司&lt;/EntTypeL1&gt;
+    &lt;EntTypeL2&gt;一人有限责任公司&lt;/EntTypeL2&gt;
+    &lt;IndustryL1&gt;制造业&lt;/IndustryL1&gt;
+    &lt;IndustryL2&gt;电子设备制造&lt;/IndustryL2&gt;
+    &lt;MainBusiness&gt;电子元器件研发与制造&lt;/MainBusiness&gt;
+    &lt;RegionCity&gt;530100&lt;/RegionCity&gt;
+    &lt;RegionCounty&gt;530102&lt;/RegionCounty&gt;
+    &lt;RegionDistrict&gt;530102001&lt;/RegionDistrict&gt;
+    &lt;ContactName&gt;张三&lt;/ContactName&gt;
+    &lt;ContactAddr&gt;昆明市五华区人民路1号&lt;/ContactAddr&gt;
+    &lt;PostalCode&gt;650000&lt;/PostalCode&gt;
+    &lt;Phone&gt;0871-12345678&lt;/Phone&gt;
+    &lt;Fax&gt;0871-12345679&lt;/Fax&gt;
+    &lt;Email&gt;zhangsan@example.com&lt;/Email&gt;
+  &lt;/Body&gt;
+&lt;/Request&gt;
+</code></pre>
+<h4 id="_6">返回字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">结果码</td>
+<td style="text-align: left;"><code>&lt;Code&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;"><code>0000</code> 表示成功</td>
+</tr>
+<tr>
+<td style="text-align: left;">结果描述</td>
+<td style="text-align: left;"><code>&lt;Message&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">操作结果说明</td>
+</tr>
+<tr>
+<td style="text-align: left;">备案记录ID</td>
+<td style="text-align: left;"><code>&lt;FilingID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">系统生成的备案唯一标识</td>
+</tr>
+<tr>
+<td style="text-align: left;">备案状态</td>
+<td style="text-align: left;"><code>&lt;Status&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;"><code>待审核</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">提交时间</td>
+<td style="text-align: left;"><code>&lt;SubmitTime&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">服务端记录的提交时间</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_7">返回示例</h4>
+<pre><code class="language-xml">&lt;Response&gt;
+  &lt;Header&gt;
+    &lt;RequestID&gt;REQ20240301090000001&lt;/RequestID&gt;
+    &lt;Timestamp&gt;2024-03-01T09:00:02&lt;/Timestamp&gt;
+  &lt;/Header&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;备案信息上报成功，等待省局审核。&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;FilingID&gt;FIL20240301000001&lt;/FilingID&gt;
+    &lt;Status&gt;待审核&lt;/Status&gt;
+    &lt;SubmitTime&gt;2024-03-01T09:00:02&lt;/SubmitTime&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<h4 id="_8">业务规则</h4>
+<ul>
+<li>每个企业同一时间只能有<strong>一条有效备案记录</strong>。仅当上一次备案状态为<code>已退回</code>时，方可重新提交。</li>
+<li><code>RegionCity</code>、<code>RegionCounty</code>、<code>RegionDistrict</code> 须与账号绑定地区一致，企业不可自行修改，系统自动校验。</li>
+<li><code>OrgCode</code> 在全系统范围内须唯一，重复提交返回错误码 <code>1003</code>。</li>
+<li><code>Email</code> 非必填，但若填写则必须通过格式校验，否则返回 <code>1001</code>。</li>
+</ul>
+<hr />
+<h3 id="52-if-02">5.2 IF-02 备案审核结果查询接口</h3>
+<p><strong>接口编号：</strong> <code>IF-02</code><br />
+<strong>对应功能需求：</strong> FR-102 备案上报<br />
+<strong>调用方向：</strong> 企业系统 → 省局系统<br />
+<strong>触发时机：</strong> 企业用户查看当前备案状态<br />
+<strong>前置条件：</strong> 企业已提交过备案信息<br />
+<strong>后置条件：</strong> 返回当前备案状态及退回原因（如有）</p>
+<h4 id="_9">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业账号ID</td>
+<td style="text-align: left;"><code>&lt;EnterpriseID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">备案记录ID</td>
+<td style="text-align: left;"><code>&lt;FilingID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">不填则返回最新备案记录</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_10">返回字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">备案记录ID</td>
+<td style="text-align: left;"><code>&lt;FilingID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">备案状态</td>
+<td style="text-align: left;"><code>&lt;Status&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">见下方状态说明</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核人</td>
+<td style="text-align: left;"><code>&lt;Reviewer&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">省局审核人员姓名，审核后填写</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核时间</td>
+<td style="text-align: left;"><code>&lt;ReviewTime&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">审核后填写</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回原因</td>
+<td style="text-align: left;"><code>&lt;ReturnRemark&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">状态为<code>已退回</code>时必有值</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_11">备案状态值说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">状态值</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>待审核</code></td>
+<td style="text-align: left;">企业已提交，等待省局审核</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已通过</code></td>
+<td style="text-align: left;">省局审核通过，企业可进行数据填报</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已退回</code></td>
+<td style="text-align: left;">省局审核退回，企业可查看退回原因并重新提交</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="53-if-03">5.3 IF-03 就业数据草稿保存接口</h3>
+<p><strong>接口编号：</strong> <code>IF-03</code><br />
+<strong>对应功能需求：</strong> FR-103 数据填报（保存草稿功能）<br />
+<strong>调用方向：</strong> 企业系统 → 省局系统<br />
+<strong>触发时机：</strong> 企业用户填报过程中点击"保存草稿"<br />
+<strong>前置条件：</strong>
+- 企业备案状态为<code>已通过</code>
+- 当前时间在开放的调查期内</p>
+<p><strong>后置条件：</strong> 草稿记录保存，状态为<code>草稿</code>，不触发审核流程</p>
+<h4 id="_12">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业账号ID</td>
+<td style="text-align: left;"><code>&lt;EnterpriseID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期</td>
+<td style="text-align: left;"><code>&lt;SurveyPeriod&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式：<code>YYYYMM</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">建档期就业人数</td>
+<td style="text-align: left;"><code>&lt;FilingEmployment&gt;</code></td>
+<td style="text-align: left;">整数</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">草稿允许不完整</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期就业人数</td>
+<td style="text-align: left;"><code>&lt;SurveyEmployment&gt;</code></td>
+<td style="text-align: left;">整数</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">草稿允许不完整</td>
+</tr>
+<tr>
+<td style="text-align: left;">其他原因</td>
+<td style="text-align: left;"><code>&lt;OtherReasons&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">就业人数减少类型</td>
+<td style="text-align: left;"><code>&lt;DecreaseType&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">草稿阶段不做强制校验</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因</td>
+<td style="text-align: left;"><code>&lt;PrimaryReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因说明</td>
+<td style="text-align: left;"><code>&lt;PrimaryReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因</td>
+<td style="text-align: left;"><code>&lt;SecondaryReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因说明</td>
+<td style="text-align: left;"><code>&lt;SecondaryReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因</td>
+<td style="text-align: left;"><code>&lt;ThirdReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因说明</td>
+<td style="text-align: left;"><code>&lt;ThirdReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_13">返回示例</h4>
+<pre><code class="language-xml">&lt;Response&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;草稿保存成功。&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;DraftID&gt;DFT202403150001&lt;/DraftID&gt;
+    &lt;Status&gt;草稿&lt;/Status&gt;
+    &lt;SaveTime&gt;2024-03-15T10:00:00&lt;/SaveTime&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<h4 id="_14">业务规则</h4>
+<ul>
+<li>草稿阶段<strong>不进行完整性校验</strong>，允许字段部分为空。</li>
+<li>同一企业同一调查期只能有一条草稿记录。重复保存时，以最新内容覆盖。</li>
+<li>草稿<strong>不触发</strong>市级/省级审核流程。</li>
+<li>调查期关闭后，草稿记录将被系统锁定，不可再修改或提交。</li>
+</ul>
+<hr />
+<h3 id="54-if-04">5.4 IF-04 就业数据正式上报接口</h3>
+<p><strong>接口编号：</strong> <code>IF-04</code><br />
+<strong>对应功能需求：</strong> FR-103 数据填报（提交上报功能）<br />
+<strong>调用方向：</strong> 企业系统 → 省局系统（经市局审核流转）<br />
+<strong>触发时机：</strong> 企业用户在上报期内点击"提交上报"<br />
+<strong>前置条件：</strong>
+- 企业备案状态为<code>已通过</code>
+- 当前时间在开放的调查期内
+- 填报数据通过完整性校验</p>
+<p><strong>后置条件：</strong> 提交记录创建，状态为<code>已上报（待市级审核）</code></p>
+<h4 id="_15">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">校验规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业账号ID</td>
+<td style="text-align: left;"><code>&lt;EnterpriseID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期</td>
+<td style="text-align: left;"><code>&lt;SurveyPeriod&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">格式：<code>YYYYMM</code>，须为当前开放调查期</td>
+</tr>
+<tr>
+<td style="text-align: left;">建档期就业人数</td>
+<td style="text-align: left;"><code>&lt;FilingEmployment&gt;</code></td>
+<td style="text-align: left;">整数</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">≥ 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期就业人数</td>
+<td style="text-align: left;"><code>&lt;SurveyEmployment&gt;</code></td>
+<td style="text-align: left;">整数</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">≥ 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">其他原因</td>
+<td style="text-align: left;"><code>&lt;OtherReasons&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">就业人数减少类型</td>
+<td style="text-align: left;"><code>&lt;DecreaseType&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">条件必填</td>
+<td style="text-align: left;">当 <code>SurveyEmployment</code> &lt; <code>FilingEmployment</code> 时必填，见受控值</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因</td>
+<td style="text-align: left;"><code>&lt;PrimaryReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">条件必填</td>
+<td style="text-align: left;">当 <code>SurveyEmployment</code> &lt; <code>FilingEmployment</code> 时必填，见受控值</td>
+</tr>
+<tr>
+<td style="text-align: left;">主要原因说明</td>
+<td style="text-align: left;"><code>&lt;PrimaryReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">条件必填</td>
+<td style="text-align: left;">填写主要原因时必填</td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因</td>
+<td style="text-align: left;"><code>&lt;SecondaryReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">见受控值</td>
+</tr>
+<tr>
+<td style="text-align: left;">次要原因说明</td>
+<td style="text-align: left;"><code>&lt;SecondaryReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因</td>
+<td style="text-align: left;"><code>&lt;ThirdReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">见受控值</td>
+</tr>
+<tr>
+<td style="text-align: left;">第三原因说明</td>
+<td style="text-align: left;"><code>&lt;ThirdReasonDesc&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="decreasetype">就业人数减少类型受控值（<code>&lt;DecreaseType&gt;</code>）</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">编码</th>
+<th style="text-align: left;">中文名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>DT01</code></td>
+<td style="text-align: left;">关闭破产</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT02</code></td>
+<td style="text-align: left;">停业整顿</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT03</code></td>
+<td style="text-align: left;">经济性裁员</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT04</code></td>
+<td style="text-align: left;">业务转移</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT05</code></td>
+<td style="text-align: left;">自然减员</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT06</code></td>
+<td style="text-align: left;">正常解除或终止劳动合同</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT07</code></td>
+<td style="text-align: left;">国际因素变化影响</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT08</code></td>
+<td style="text-align: left;">自然灾害</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT09</code></td>
+<td style="text-align: left;">重大事件影响</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DT10</code></td>
+<td style="text-align: left;">其他</td>
+</tr>
+</tbody>
+</table>
+<h4 id="primaryreason-secondaryreason-thirdreason">就业人数减少原因受控值（<code>&lt;PrimaryReason&gt;</code> / <code>&lt;SecondaryReason&gt;</code> / <code>&lt;ThirdReason&gt;</code>）</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">编码</th>
+<th style="text-align: left;">中文名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>RS01</code></td>
+<td style="text-align: left;">产业结构调整</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS02</code></td>
+<td style="text-align: left;">重大技术改革</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS03</code></td>
+<td style="text-align: left;">节能减排、淘汰落后产能</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS04</code></td>
+<td style="text-align: left;">订单不足</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS05</code></td>
+<td style="text-align: left;">原材料涨价</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS06</code></td>
+<td style="text-align: left;">工资、社保等用工成本上升</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS07</code></td>
+<td style="text-align: left;">经营资金困难</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS08</code></td>
+<td style="text-align: left;">税收政策变化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS09</code></td>
+<td style="text-align: left;">季节性用工</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS10</code></td>
+<td style="text-align: left;">其他</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS11</code></td>
+<td style="text-align: left;">自行离职</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS12</code></td>
+<td style="text-align: left;">工作调动、企业内部调剂</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS13</code></td>
+<td style="text-align: left;">劳动关系转移、劳务派遣</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS14</code></td>
+<td style="text-align: left;">退休</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS15</code></td>
+<td style="text-align: left;">退职</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS16</code></td>
+<td style="text-align: left;">死亡</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS17</code></td>
+<td style="text-align: left;">自然减员</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS18</code></td>
+<td style="text-align: left;">国际因素变化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RS19</code></td>
+<td style="text-align: left;">招不上人来</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_16">请求示例</h4>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Request&gt;
+  &lt;Header&gt;
+    &lt;SystemID&gt;YNYJSJ&lt;/SystemID&gt;
+    &lt;Version&gt;1.0&lt;/Version&gt;
+    &lt;Timestamp&gt;2024-03-15T10:30:00&lt;/Timestamp&gt;
+    &lt;RequestID&gt;REQ20240315103000001&lt;/RequestID&gt;
+  &lt;/Header&gt;
+  &lt;Body&gt;
+    &lt;Interface&gt;IF-04&lt;/Interface&gt;
+    &lt;EnterpriseID&gt;ENT000123&lt;/EnterpriseID&gt;
+    &lt;SurveyPeriod&gt;202403&lt;/SurveyPeriod&gt;
+    &lt;FilingEmployment&gt;200&lt;/FilingEmployment&gt;
+    &lt;SurveyEmployment&gt;185&lt;/SurveyEmployment&gt;
+    &lt;OtherReasons&gt;部分员工合同到期未续签&lt;/OtherReasons&gt;
+    &lt;DecreaseType&gt;DT06&lt;/DecreaseType&gt;
+    &lt;PrimaryReason&gt;RS06&lt;/PrimaryReason&gt;
+    &lt;PrimaryReasonDesc&gt;因用工成本上升，未续签到期合同工人&lt;/PrimaryReasonDesc&gt;
+    &lt;SecondaryReason&gt;RS04&lt;/SecondaryReason&gt;
+    &lt;SecondaryReasonDesc&gt;季度订单减少导致部分岗位需求降低&lt;/SecondaryReasonDesc&gt;
+    &lt;ThirdReason&gt;&lt;/ThirdReason&gt;
+    &lt;ThirdReasonDesc&gt;&lt;/ThirdReasonDesc&gt;
+  &lt;/Body&gt;
+&lt;/Request&gt;
+</code></pre>
+<h4 id="_17">返回示例</h4>
+<pre><code class="language-xml">&lt;Response&gt;
+  &lt;Header&gt;
+    &lt;RequestID&gt;REQ20240315103000001&lt;/RequestID&gt;
+    &lt;Timestamp&gt;2024-03-15T10:30:03&lt;/Timestamp&gt;
+  &lt;/Header&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;数据上报成功，等待市级审核。&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;SubmissionID&gt;SUB202403150001&lt;/SubmissionID&gt;
+    &lt;Status&gt;已上报（待市级审核）&lt;/Status&gt;
+    &lt;SurveyPeriod&gt;202403&lt;/SurveyPeriod&gt;
+    &lt;SubmitTime&gt;2024-03-15T10:30:03&lt;/SubmitTime&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<h4 id="_18">业务规则</h4>
+<ul>
+<li>仅当 <code>SurveyPeriod</code> 对应的调查期处于<strong>开放状态</strong>时，接口方接受请求；否则返回错误码 <code>1004</code>。</li>
+<li>当 <code>SurveyEmployment</code> &lt; <code>FilingEmployment</code> 时，<code>DecreaseType</code>、<code>PrimaryReason</code>、<code>PrimaryReasonDesc</code> 三个字段<strong>强制必填</strong>，否则返回 <code>1001</code>。</li>
+<li>同一企业同一调查期只能提交<strong>一条正式记录</strong>。如该调查期已有记录且状态不为<code>已退回</code>，则返回 <code>1003</code>。</li>
+<li>三个原因字段（<code>PrimaryReason</code>、<code>SecondaryReason</code>、<code>ThirdReason</code>）如同时填写，<strong>编码不得重复</strong>。</li>
+<li>系统在接收到正式上报后，自动将对应草稿记录（如有）标记为<code>已提交</code>，不可再修改。</li>
+</ul>
+<hr />
+<h3 id="55-if-05">5.5 IF-05 企业历史数据查询接口</h3>
+<p><strong>接口编号：</strong> <code>IF-05</code><br />
+<strong>对应功能需求：</strong> FR-104 数据查询<br />
+<strong>调用方向：</strong> 企业系统 → 省局系统<br />
+<strong>触发时机：</strong> 企业用户查询以往调查期数据状态<br />
+<strong>前置条件：</strong> 企业已通过身份验证<br />
+<strong>后置条件：</strong> 返回历史提交记录列表及当前状态</p>
+<h4 id="_19">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">企业账号ID</td>
+<td style="text-align: left;"><code>&lt;EnterpriseID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">数据状态筛选</td>
+<td style="text-align: left;"><code>&lt;StatusFilter&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">见状态受控值，支持单值筛选</td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期起始</td>
+<td style="text-align: left;"><code>&lt;PeriodStart&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">格式：<code>YYYYMM</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">调查期截止</td>
+<td style="text-align: left;"><code>&lt;PeriodEnd&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">格式：<code>YYYYMM</code>，须 ≥ <code>PeriodStart</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_20">返回字段说明（每条记录）</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">调查期</td>
+<td style="text-align: left;"><code>&lt;SurveyPeriod&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">提交记录ID</td>
+<td style="text-align: left;"><code>&lt;SubmissionID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">唯一标识</td>
+</tr>
+<tr>
+<td style="text-align: left;">数据状态</td>
+<td style="text-align: left;"><code>&lt;Status&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">见下方状态说明</td>
+</tr>
+<tr>
+<td style="text-align: left;">提交时间</td>
+<td style="text-align: left;"><code>&lt;SubmitTime&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">企业提交时间</td>
+</tr>
+<tr>
+<td style="text-align: left;">最后更新时间</td>
+<td style="text-align: left;"><code>&lt;LastUpdated&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">最近一次状态变更时间</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核备注</td>
+<td style="text-align: left;"><code>&lt;ReviewRemark&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">退回时显示退回原因</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_21">数据状态值说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">状态值</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>草稿</code></td>
+<td style="text-align: left;">企业已保存但未正式提交</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已上报（待市级审核）</code></td>
+<td style="text-align: left;">企业已提交，等待市级审核</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>市级审核中</code></td>
+<td style="text-align: left;">市级正在审核</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已上报（待省级审核）</code></td>
+<td style="text-align: left;">市级已审核通过，等待省级审核</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>省级审核中</code></td>
+<td style="text-align: left;">省级正在审核</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已审核通过</code></td>
+<td style="text-align: left;">省级审核通过</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>已退回</code></td>
+<td style="text-align: left;">被市级或省级退回，附有退回原因</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>注意：</strong> 查询结果<strong>仅支持浏览</strong>，不支持导出，与 FR-104 保持一致。</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 市级审核接口</h2>
+<hr />
+<h3 id="61-if-06">6.1 IF-06 市级数据审核接口</h3>
+<p><strong>接口编号：</strong> <code>IF-06</code><br />
+<strong>对应功能需求：</strong> FR-301 数据审核<br />
+<strong>调用方向：</strong> 市局系统 → 省局系统<br />
+<strong>触发时机：</strong> 市级用户完成审核操作（通过或退回）<br />
+<strong>前置条件：</strong> 企业提交记录状态为<code>已上报（待市级审核）</code><br />
+<strong>后置条件：</strong>
+- 审核通过：状态更新为<code>已上报（待省级审核）</code>
+- 退回：状态更新为<code>已退回</code>，退回原因对企业可见</p>
+<h4 id="_22">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">市局账号ID</td>
+<td style="text-align: left;"><code>&lt;MuniID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">系统分配的市级用户标识</td>
+</tr>
+<tr>
+<td style="text-align: left;">提交记录ID</td>
+<td style="text-align: left;"><code>&lt;SubmissionID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">目标企业提交记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核操作</td>
+<td style="text-align: left;"><code>&lt;Action&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"><code>APPROVE</code>（通过）或 <code>RETURN</code>（退回）</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回原因</td>
+<td style="text-align: left;"><code>&lt;ReturnRemark&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">条件必填</td>
+<td style="text-align: left;"><code>Action</code> 为 <code>RETURN</code> 时必填，不超过500字</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核人ID</td>
+<td style="text-align: left;"><code>&lt;ReviewerID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">市级操作人用户ID，系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">审核时间</td>
+<td style="text-align: left;"><code>&lt;ReviewTime&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">是否批量审核</td>
+<td style="text-align: left;"><code>&lt;IsBatch&gt;</code></td>
+<td style="text-align: left;">布尔值</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;"><code>true</code> 表示批量操作，默认 <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">批量记录ID列表</td>
+<td style="text-align: left;"><code>&lt;SubmissionIDs&gt;</code></td>
+<td style="text-align: left;">列表</td>
+<td style="text-align: left;">条件必填</td>
+<td style="text-align: left;"><code>IsBatch</code> 为 <code>true</code> 时必填</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_23">请求示例（单条审核通过）</h4>
+<pre><code class="language-xml">&lt;Request&gt;
+  &lt;Header&gt;
+    &lt;SystemID&gt;YNYJSJ&lt;/SystemID&gt;
+    &lt;Version&gt;1.0&lt;/Version&gt;
+    &lt;Timestamp&gt;2024-03-18T14:00:00&lt;/Timestamp&gt;
+    &lt;RequestID&gt;REQ20240318140000001&lt;/RequestID&gt;
+  &lt;/Header&gt;
+  &lt;Body&gt;
+    &lt;Interface&gt;IF-06&lt;/Interface&gt;
+    &lt;MuniID&gt;MUNI530100&lt;/MuniID&gt;
+    &lt;SubmissionID&gt;SUB202403150001&lt;/SubmissionID&gt;
+    &lt;Action&gt;APPROVE&lt;/Action&gt;
+    &lt;ReviewerID&gt;USR_MUNI_001&lt;/ReviewerID&gt;
+    &lt;ReviewTime&gt;2024-03-18T14:00:00&lt;/ReviewTime&gt;
+    &lt;IsBatch&gt;false&lt;/IsBatch&gt;
+  &lt;/Body&gt;
+&lt;/Request&gt;
+</code></pre>
+<h4 id="_24">返回示例（审核通过）</h4>
+<pre><code class="language-xml">&lt;Response&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;审核通过，数据已转交省局审核。&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;SubmissionID&gt;SUB202403150001&lt;/SubmissionID&gt;
+    &lt;Status&gt;已上报（待省级审核）&lt;/Status&gt;
+    &lt;ReviewTime&gt;2024-03-18T14:00:00&lt;/ReviewTime&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<h4 id="_25">业务规则</h4>
+<ul>
+<li>市级用户<strong>只能审核本辖区内</strong>企业提交的数据，跨辖区操作返回错误码 <code>2003</code>。</li>
+<li><code>Action</code> 为 <code>RETURN</code> 时，<code>ReturnRemark</code> 为<strong>必填</strong>，不得为空，否则返回 <code>1001</code>。</li>
+<li>市级用户<strong>不可修改</strong>企业提交数据的内容，仅可进行通过或退回操作。</li>
+<li>支持<strong>批量审核</strong>：<code>IsBatch</code> 为 <code>true</code> 时，<code>SubmissionIDs</code> 替代 <code>SubmissionID</code> 作为操作目标，批量操作需全部成功或全部回滚。</li>
+<li>审核操作需记录：<strong>审核人、审核时间、审核结果</strong>，供后续查看审核记录（FR-301）使用。</li>
+<li>已退回的记录，企业重新提交后，状态重置为<code>已上报（待市级审核）</code>，市级须重新审核。</li>
+</ul>
+<hr />
+<h3 id="62-if-07">6.2 IF-07 市级数据退回接口</h3>
+<p><strong>接口编号：</strong> <code>IF-07</code><br />
+<strong>对应功能需求：</strong> FR-301 数据审核（退回功能）<br />
+<strong>调用方向：</strong> 市局系统 → 企业（状态通知）<br />
+<strong>触发时机：</strong> 市级用户点击"退回"并确认退回原因<br />
+<strong>前置条件：</strong> 提交记录状态为<code>已上报（待市级审核）</code>或<code>市级审核中</code><br />
+<strong>后置条件：</strong>
+- 数据状态更新为<code>已退回</code>
+- 企业端可查看退回原因，并在调查期内重新填报</p>
+<h4 id="_26">请求字段说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段名</th>
+<th style="text-align: left;">XML标签</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">市局账号ID</td>
+<td style="text-align: left;"><code>&lt;MuniID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">提交记录ID</td>
+<td style="text-align: left;"><code>&lt;SubmissionID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">退回原因</td>
+<td style="text-align: left;"><code>&lt;ReturnReason&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">不超过500字，企业端可见</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回人ID</td>
+<td style="text-align: left;"><code>&lt;ReturnUserID&gt;</code></td>
+<td style="text-align: left;">字符串</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">市级操作人用户ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回时间</td>
+<td style="text-align: left;"><code>&lt;ReturnTime&gt;</code></td>
+<td style="text-align: left;">日期时间</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">批量退回ID列表</td>
+<td style="text-align: left;"><code>&lt;SubmissionIDs&gt;</code></td>
+<td style="text-align: left;">列表</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">批量退回时使用</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_27">返回示例</h4>
+<pre><code class="language-xml">&lt;Response&gt;
+  &lt;Result&gt;
+    &lt;Code&gt;0000&lt;/Code&gt;
+    &lt;Message&gt;数据已退回，企业端已收到退回通知。&lt;/Message&gt;
+  &lt;/Result&gt;
+  &lt;Body&gt;
+    &lt;SubmissionID&gt;SUB202403150001&lt;/SubmissionID&gt;
+    &lt;Status&gt;已退回&lt;/Status&gt;
+    &lt;ReturnTime&gt;2024-03-18T15:00:00&lt;/ReturnTime&gt;
+  &lt;/Body&gt;
+&lt;/Response&gt;
+</code></pre>
+<h4 id="_28">退回日志记录字段</h4>
+<p>系统自动记录每次退回操作，日志字段如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">退回人</td>
+<td style="text-align: left;">当前操作的市级用户账号</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回时间</td>
+<td style="text-align: left;">系统自动记录</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回原因</td>
+<td style="text-align: left;">市级用户填写内容，企业端可见</td>
+</tr>
+<tr>
+<td style="text-align: left;">退回数据</td>
+<td style="text-align: left;">被退回记录的 <code>SubmissionID</code> 列表</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_29">业务规则</h4>
+<ul>
+<li>退回后，企业可在<strong>当前调查期仍开放</strong>的前提下重新填报并提交。</li>
+<li>若调查期已关闭，退回记录将被锁定，企业无法再次提交该期数据。</li>
+<li>退回原因对<strong>企业用户可见</strong>，系统在企业端的数据查询（FR-104）中展示。</li>
+<li>支持批量退回，使用 <code>SubmissionIDs</code> 字段传入多条记录ID，操作结果逐条返回。</li>
+</ul>
+<hr />
+<p><em>—— 前半部分结束 ——</em></p>
+<blockquote>
+<p><strong>后半部分</strong>将覆盖以下接口：
+- <code>IF-08</code> 省局数据汇总上报接口（省局 → 国家失业监测系统）
+- <code>IF-09</code> 省局数据退回接口（省局 → 市局/企业）
+- <code>IF-10</code> 通知发布与推送接口（省局/市局 → 企业）
+- <code>IF-11</code> 系统管理接口（调查期配置、用户管理）</p>
+</blockquote>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
